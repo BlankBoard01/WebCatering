@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Azzalea Catering - Layanan Catering Premium di Sleman, Yogyakarta">
+    <meta name="keywords" content="catering, sleman, yogyakarta, catering pernikahan, catering acara">
+    <title>Azzalea Catering - Catering Premium Sleman</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">Azzalea Catering</div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul id="navMenu">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#services">Layanan</a></li>
+                <li><a href="#testimonials">Testimoni</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Azzalea Catering</h1>
+                <p class="subtitle">Cita Rasa Premium untuk Setiap Momen Istimewa Anda di Sleman, Yogyakarta</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn-primary">Pesan Sekarang →</a>
+                    <a href="#menu" class="btn-secondary">Lihat Menu</a>
+                </div>
+            </div>
+            <!-- <div class="hero-image">
+                <img src="content/headhero.jpg" alt="Azzalea Catering">
+            </div> -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Tentang Kami</h2>
+                <p>Melayani dengan dedikasi dan kualitas terbaik</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-content">
+                    <p><strong>Azzalea Catering</strong> hadir untuk melayani kebutuhan katering Anda di wilayah Sleman dengan standar premium dan pelayanan terbaik.</p>
+                    <p>Dengan pengalaman bertahun-tahun, kami berkomitmen menyajikan hidangan berkualitas tinggi menggunakan bahan-bahan segar pilihan dan resep otentik yang telah teruji.</p>
+                    <p>Dari acara pernikahan, ulang tahun, syukuran, hingga meeting kantor - kami siap memenuhi kebutuhan kuliner Anda dengan cita rasa yang tak terlupakan.</p>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Acara Sukses</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5000+</div>
+                        <div class="stat-label">Porsi/Bulan</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">96%</div>
+                        <div class="stat-label">Kepuasan Pelanggan</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Customer Support</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-title">
+                <h2>Paket Menu Pilihan</h2>
+                <p>Beragam pilihan menu sesuai kebutuhan dan budget Anda</p>
+            </div>
+            
+            <!-- Menu Filter Tabs -->
+            <div class="menu-filter-tabs">
+                <button class="filter-tab active" data-category="all">Semua Menu</button>
+                <button class="filter-tab" data-category="kenduri">Paket Kenduri</button>
+                <button class="filter-tab" data-category="nasibox">Nasi Box</button>
+                <button class="filter-tab" data-category="prasmanan">Prasmanan</button>
+                <button class="filter-tab" data-category="gubug">Gubug</button>
+            </div>
+            
+            <div class="menu-grid">
+                <!-- PAKET KENDURI -->
+                <div class="menu-card" data-category="kenduri">
+                    <div class="menu-badge">Kenduri</div>
+                    <div class="menu-image">🍛</div>
+                    <div class="menu-content">
+                        <h3>Paket Kenduri 30K</h3>
+                        <ul class="menu-list">
+                            <li>Nasi</li>
+                            <li>Sambal Goreng Kentang</li>
+                            <li>Mie Goreng/Soon Lombok Ijo</li>
+                            <li>Gudangan</li>
+                            <li>Ayam Goreng</li>
+                            <li>Tempe, Telur</li>
+                            <li>Kerupuk + Peyek</li>
+                        </ul>
+                        <div class="price">Rp 30.000/pax</div>
+                    </div>
+                </div>
+                
+                <div class="menu-card" data-category="kenduri">
+                    <div class="menu-badge">Kenduri</div>
+                    <div class="menu-image">🍛</div>
+                    <div class="menu-content">
+                        <h3>Paket Kenduri 35K</h3>
+                        <ul class="menu-list">
+                            <li>Nasi, Nasi Gurih</li>
+                            <li>Sambal Goreng Kentang Krecek</li>
+                            <li>Mie Goreng/Soon Lombok Ijo</li>
+                            <li>Gudangan, Ayam Goreng</li>
+                            <li>Tempe, Telur, Perkedel</li>
+                            <li>Kerupuk + Peyek, Buah, Jajan Pasar</li>
+                        </ul>
+                        <div class="price">Rp 35.000/pax</div>
+                    </div>
+                </div>
+                
+                <div class="menu-card" data-category="kenduri">
+                    <div class="menu-badge">Kenduri</div>
+                    <div class="menu-image">🍛</div>
+                    <div class="menu-content">
+                        <h3>Paket Kenduri 40K</h3>
+                        <ul class="menu-list">
+                            <li>Nasi, Nasi Gurih</li>
+                            <li>Sambal Goreng Kentang Krecek + Telur Puyuh</li>
+                            <li>Mie Goreng/Soon Lombok Ijo, Gudangan</li>
+                            <li>Ayam Goreng, Tumis Janggel/Ampela Lombok Ijo</li>
+                            <li>Tempe, Telur, Perkedel, Buah + Snack Ringan</li>
+                            <li>Kerupuk + Peyek</li>
+                        </ul>
+                        <div class="price">Rp 40.000/pax</div>
+                    </div>
+                </div>
+                
+                <div class="menu-card" data-category="kenduri">
+                    <div class="menu-badge">Kenduri</div>
+                    <div class="menu-image">🍛</div>
+                    <div class="menu-content">
+                        <h3>Paket Kenduri 45K</h3>
+                        <ul class="menu-list">
+                            <li>Nasi, Nasi Gurih</li>
+                            <li>Sambal Goreng Kentang Krecek + Telur Puyuh</li>
+                            <li>Mie Goreng/Soon Lombok Ijo, Gudangan</li>
+                            <li>Ayam Goreng, Snack berat</li>
+                            <li>Tumis Janggel/Ampela Lombok Ijo</li>
+                            <li>Tempe, Telur, Perkedel, Buah, Kerupuk + Peyek</li>
+                        </ul>
+                        <div class="price">Rp 45.000/pax</div>
+                    </div>
+                </div>
+                
+                <!-- PAKET NASI BOX -->
+                <div class="menu-card" data-category="nasibox">
+                    <div class="menu-badge">Nasi Box</div>
+                    <div class="menu-image">🍱</div>
+                    <div class="menu-content">
+                        <h3>Nasi Box 10K</h3>
+                        <ul class="menu-list">
+                            <li>Nasi Ayam/Ikan (Goreng/Bakar)</li>
+                            <li>Sambal Lalap</li>
+                        </ul>
+                        <div class="price">Rp 10.000/box</div>
+                    </div>
+                </div>
+                
+                <div class="menu-card" data-category="nasibox">
+                    <div class="menu-badge">Nasi Box</div>
+                    <div class="menu-image">🍱</div>
+                    <div class="menu-content">
+                        <h3>Nasi Box 12K</h3>
+                        <ul class="menu-list">
+                            <li>Nasi Ayam/Ikan (Goreng/Bakar)</li>
+                            <li>Sambal Lalap</li>
+                            <li>Ca Sayur</li>
+                        </ul>
+                        <div class="price">Rp 12.000/box</div>
+                    </div>
+                </div>
+                
+                <div class="menu-card" data-category="nasibox">
+                    <div class="menu-badge">Nasi Box</div>
+                    <div class="menu-image">🍱</div>
+                    <div class="menu-content">
+                        <h3>Nasi Box 15K</h3>
+                        <ul class="menu-list">
+                            <li>Nasi Ayam/Ikan (Goreng/Bakar)</li>
+                            <li>Sambal Lalap</li>
+                            <li>Ca Sayur, Tahu/Tempe</li>
+                            <li>Kerupuk</li>
+                        </ul>
+                        <div class="price">Rp 15.000/box</div>
+                    </div>
+                </div>
+                
+                <div class="menu-card" data-category="nasibox">
+                    <div class="menu-badge">Nasi Box</div>
+                    <div class="menu-image">🍱</div>
+                    <div class="menu-content">
+                        <h3>Nasi Box 18K</h3>
+                        <ul class="menu-list">
+                            <li>Nasi Ayam/Ikan (Bakar/Goreng)</li>
+                            <li>Sambal Lalap, Ca Sayur</li>
+                            <li>Tahu/Tempe, Sambal Kentang</li>
+                            <li>Kerupuk, Buah Potong</li>
+                        </ul>
+                        <div class="price">Rp 18.000/box</div>
+                    </div>
+                </div>
+                
+                <div class="menu-card" data-category="nasibox">
+                    <div class="menu-badge">Nasi Box</div>
+                    <div class="menu-image">🍱</div>
+                    <div class="menu-content">
+                        <h3>Nasi Box 20K</h3>
+                        <ul class="menu-list">
+                            <li>Nasi Ayam/Ikan (Bakar/Goreng)</li>
+                            <li>Sambal Lalap, Ca Sayur</li>
+                            <li>Tahu/Tempe, Sambal Kentang</li>
+                            <li>Acar/Trancam, Kerupuk, Buah</li>
+                        </ul>
+                        <div class="price">Rp 20.000/box</div>
+                    </div>
+                </div>
+                
+                <div class="menu-card" data-category="nasibox">
+                    <div class="menu-badge">Nasi Box</div>
+                    <div class="menu-image">🍱</div>
+                    <div class="menu-content">
+                        <h3>Nasi Box 25K</h3>
+                        <ul class="menu-list">
+                            <li>Nasi Ayam/Ikan (Goreng/Bakar)</li>
+                            <li>Ca Sayur, Tahu/Tempe</li>
+                            <li>Sambal Kentang, Filet Ikan Goreng</li>
+                            <li>Kerupuk, Buah</li>
+                        </ul>
+                        <div class="price">Rp 25.000/box</div>
+                    </div>
+                </div>
+                
+                <!-- PAKET PRASMANAN -->
+                <div class="menu-card" data-category="prasmanan">
+                    <div class="menu-badge">Prasmanan</div>
+                    <div class="menu-image">🍽️</div>
+                    <div class="menu-content">
+                        <h3>Paket Prasmanan 20K</h3>
+                        <ul class="menu-list">
+                            <li>Nasi Putih</li>
+                            <li>Sop Kombinasi</li>
+                            <li>Sambal Goreng Krecek</li>
+                            <li>Ayam fillet goreng tepung saus asam manis / saus asam pedas</li>
+                            <li>Gulai telur / Telur semur / Telur balado / Telur bumbu bali / Fuyunghai</li>
+                            <li>Acar, Kerupuk / Rambak, Air Mineral, Teh, Soft Drink, Buah Potong</li>
+                        </ul>
+                        <div class="price">Rp 20.000/pax</div>
+                    </div>
+                </div>
+                
+                <div class="menu-card" data-category="prasmanan">
+                    <div class="menu-badge">Prasmanan</div>
+                    <div class="menu-image">🍽️</div>
+                    <div class="menu-content">
+                        <h3>Paket Prasmanan 23K</h3>
+                        <ul class="menu-list">
+                            <li>Nasi Putih</li>
+                            <li>Sup Rolade sosis</li>
+                            <li>Sambal Goreng Ati Krecek</li>
+                            <li>Ikan goreng tepung saos asam manis / saos asam pedas</li>
+                            <li>Galantin</li>
+                            <li>Mie soon ayu jamur / Bihun goreng / Kwetiaw</li>
+                            <li>Acar / Trancam, Kerupuk udang, Teh, Soft Drink, Buah Potong</li>
+                        </ul>
+                        <div class="price">Rp 23.000/pax</div>
+                    </div>
+                </div>
+                
+                <div class="menu-card" data-category="prasmanan">
+                    <div class="menu-badge">Prasmanan</div>
+                    <div class="menu-image">🍽️</div>
+                    <div class="menu-content">
+                        <h3>Paket Prasmanan 27K</h3>
+                        <ul class="menu-list">
+                            <li>Nasi Putih</li>
+                            <li>Sup Rolade Kombinasi</li>
+                            <li>Sambal goreng krecek</li>
+                            <li>Semur bola-bola daging</li>
+                            <li>Ayam bakar / Ayam goreng / Ayam semur / Rica-Rica Ayam / Ayam lada hitam</li>
+                            <li>Gurameh goreng tepung</li>
+                            <li>Capcay / Oseng daun kates / Mie soon Lombok ijo</li>
+                            <li>Acar / Trancam / Karedok, Krupuk udang, The, Air mineral, Soft Drink, Buah potong, Ice cream</li>
+                        </ul>
+                        <div class="price">Rp 27.000/pax</div>
+                    </div>
+                </div>
+                
+                <div class="menu-card" data-category="prasmanan">
+                    <div class="menu-badge">Prasmanan</div>
+                    <div class="menu-image">🍽️</div>
+                    <div class="menu-content">
+                        <h3>Paket Prasmanan 37K</h3>
+                        <ul class="menu-list">
+                            <li>Nasi Putih</li>
+                            <li>Sup Kombinasi</li>
+                            <li>Sambal goreng krecek bola-bola daging</li>
+                            <li>Daging sapi lada hitam / Daging rendang</li>
+                            <li>Pal Lay Bakso</li>
+                            <li>Ikan dori goreng tepung</li>
+                            <li>Galantin</li>
+                            <li>Acar / Trancam / Karedok, Krupuk udang, Teh, Air mineral, Soft Drink / Infus Water, Buah potong, Ice cream</li>
+                        </ul>
+                        <div class="price">Rp 37.000/pax</div>
+                    </div>
+                </div>
+                
+                <!-- PAKET GUBUG -->
+                <div class="menu-card" data-category="gubug">
+                    <div class="menu-badge">Gubug</div>
+                    <div class="menu-image">🥙</div>
+                    <div class="menu-content">
+                        <h3>Menu Gubug 3K</h3>
+                        <ul class="menu-list-compact">
+                            <li>Dawet ayu</li>
+                            <li>Dawet hitam</li>
+                            <li>Wedang uwuh</li>
+                            <li>Aneka juice</li>
+                            <li>Wedang sereh</li>
+                        </ul>
+                        <div class="price">Rp 3.000/porsi</div>
+                    </div>
+                </div>
+                
+                <div class="menu-card" data-category="gubug">
+                    <div class="menu-badge">Gubug</div>
+                    <div class="menu-image">🥙</div>
+                    <div class="menu-content">
+                        <h3>Menu Gubug 5K</h3>
+                        <ul class="menu-list-compact">
+                            <li>Es Campur</li>
+                            <li>Es Kuwut</li>
+                            <li>Es teler</li>
+                            <li>Es Doger</li>
+                            <li>Es Degan</li>
+                            <li>Rujak Es Cream</li>
+                            <li>Es cream puding</li>
+                            <li>Sup Buah</li>
+                            <li>Martabak</li>
+                            <li>Bakso ayam / Bakso Kawi</li>
+                            <li>Gado-Gado</li>
+                            <li>Sempol</li>
+                            <li>Lontong sayur</li>
+                            <li>Soto Ayam</li>
+                            <li>Kupat Tahu</li>
+                        </ul>
+                        <div class="price">Rp 5.000/porsi</div>
+                    </div>
+                </div>
+                
+                <div class="menu-card" data-category="gubug">
+                    <div class="menu-badge">Gubug</div>
+                    <div class="menu-image">🥙</div>
+                    <div class="menu-content">
+                        <h3>Menu Gubug 7K</h3>
+                        <ul class="menu-list-compact">
+                            <li>Dimsum</li>
+                            <li>Bakso daging / Bakso ikan</li>
+                            <li>Siomay ikan / ayam</li>
+                            <li>Batagor</li>
+                            <li>Sate ayam</li>
+                            <li>Lontong Kikil</li>
+                            <li>Empek-empek</li>
+                            <li>Soto Daging / Soto lesah / Soto Sulung</li>
+                            <li>Mie Jawa</li>
+                        </ul>
+                        <div class="price">Rp 7.000/porsi</div>
+                    </div>
+                </div>
+                
+                <div class="menu-card" data-category="gubug">
+                    <div class="menu-badge">Gubug</div>
+                    <div class="menu-image">🥙</div>
+                    <div class="menu-content">
+                        <h3>Menu Gubug 10K</h3>
+                        <ul class="menu-list-compact">
+                            <li>Empal gentong</li>
+                            <li>Zuppa Soup</li>
+                            <li>Tengkleng</li>
+                            <li>Sop Buntut</li>
+                            <li>Nasi rawon</li>
+                            <li>Tongseng ayam</li>
+                            <li>Opor ayam</li>
+                            <li>Opor sapi</li>
+                            <li>Tongseng daging</li>
+                        </ul>
+                        <div class="price">Rp 10.000/porsi</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Layanan Kami</h2>
+                <p>Solusi catering untuk berbagai jenis acara</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">💒</div>
+                    <h3>Pernikahan</h3>
+                    <p>Layanan catering eksklusif untuk hari istimewa Anda, dengan menu spesial, dekorasi elegan, dan pelayanan all-in.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🎉</div>
+                    <h3>Prasmanan</h3>
+                    <p>Pilihan menu beragam untuk ulang tahun, syukuran, arisan, maupun acara keluarga lainnya yang hangat dan meriah.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3>Formal Event</h3>
+                    <p>Catering profesional untuk meeting, seminar, gathering, dan acara perusahaan atau instansi resmi.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🍱</div>
+                    <h3>Nasi Box</h3>
+                    <p>Praktis, higienis, dan lezat. Cocok untuk acara outdoor, perjalanan, atau jamuan sederhana dengan kemasan eksklusif.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🙏</div>
+                    <h3>Kenduri</h3>
+                    <p>Paket kenduri lengkap dengan cita rasa tradisional, sesuai untuk acara tahlilan, doa bersama, atau syukuran keluarga.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🥡</div>
+                    <h3>Ater-ater</h3>
+                    <p>Layanan hantaran atau bingkisan makanan dengan kemasan rapi, cocok untuk berbagi ke tetangga, rekan, atau kerabat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Testimoni Pelanggan</h2>
+                <p>Apa kata mereka yang telah menggunakan layanan kami</p>
+            </div>
+            
+            <div class="testimonial-slider-container">
+                <button class="slider-btn prev-btn" onclick="prevSlide()">‹</button>
+                
+                <div class="testimonial-slider">
+                    <div class="testimonial-track">
+                        <div class="testimonial-card">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p class="testimonial-text">"Selama 7 hari ikut kegiatan di BLK Sleman, katering dari Azzalea ini selalu memuaskan. Setiap hari makanannya selalu datang dalam kondisi fresh, porsinya pas, dan rasanya oke. Variasi menu juga cukup menarik, jadi nggak bikin bosan. Pokoknya highly recommended buat siapa pun yang lagi cari katering berkualitas di area Sleman!."</p>
+                            <p class="testimonial-author">- acidguru</p>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p class="testimonial-text">"Tempat pesan catering.. Pelayanan oke.. Bagi instansi juga bisa karena sudah terdaftar di mbizmarket."</p>
+                            <p class="testimonial-author">- Arif Masthori</p>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p class="testimonial-text">"Makanan sangat Enak, dan dijamin kebersihannya"</p>
+                            <p class="testimonial-author">- Fitri Meilani</p>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p class="testimonial-text">"Catering cocok untuk langganan, pelayanan gercep"</p>
+                            <p class="testimonial-author">- Raden Baguse</p>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p class="testimonial-text">"Pesan apa saja bisa."</p>
+                            <p class="testimonial-author">- Ariv Darmawan</p>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p class="testimonial-text">"Catering cocok banget, orangnya baik baik."</p>
+                            <p class="testimonial-author">- Arly Yudha</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="slider-btn next-btn" onclick="nextSlide()">›</button>
+            </div>
+            
+            <div class="slider-dots"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Hubungi Kami</h2>
+                <p>Siap membantu mewujudkan acara impian Anda</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h3>Alamat</h3>
+                            <p>Jl. Raya Soka Wetan, RT.04/RW.16, Bening, Merdikorejo, Kec. Tempel, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55552</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div>
+                            <h3>Telepon / WhatsApp</h3>
+                            <p>0859-3047-0342</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📸</div>
+                        <div>
+                            <h3>Instagram</h3>
+                            <p>catering_azzalea</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">🕐</div>
+                        <div>
+                            <h3>Jam Operasional</h3>
+                            <p>Senin - Minggu: 08.00 - 20.00 WIB</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Kirim Pesan</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Nama Lengkap" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Nomor Telepon" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Pesan Anda (jenis acara, tanggal, jumlah tamu, dll.)" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>    
+        <div class="container">
+            <p>&copy; Azzalea Catering 2025.</p>
+            <p style="margin-top: 0.5rem;">Melayani dengan Sepenuh Hati ❤️</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
