@@ -1,9 +1,3 @@
-/* ==========================================
-   AZZALEA CATERING - MAIN STYLESHEET
-   Modern Design Version
-   ========================================== */
-
-/* Modern CSS Variables */
 :root {
     --maroon-primary: #8B0000;
     --maroon-dark: #5c0016;
@@ -16,17 +10,23 @@
     --text-gray: #666666;
     --shadow: rgba(139, 0, 0, 0.1);
     --shadow-hover: rgba(139, 0, 0, 0.2);
+
+    /* Wedding palette — warm parchment tones derived from maroon */
+    --wedding-bg: #2a1010;
+    --wedding-card-bg: #3d1a1a;
+    --wedding-card-alt: #4a2020;
+    --wedding-gold: #c9a55a;
+    --wedding-gold-light: #e8c97a;
+    --wedding-cream: #f5ede0;
+    --wedding-text: #f0ddc8;
+    --wedding-text-muted: #c4a882;
+    --wedding-border: rgba(201, 165, 90, 0.25);
 }
 
-/* Reset & Base Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     color: var(--text-dark);
     line-height: 1.7;
     overflow-x: hidden;
@@ -63,6 +63,7 @@ nav.scrolled {
 }
 
 .logo {
+    font-family: 'Playfair Display', Georgia, serif;
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--maroon-primary);
@@ -96,13 +97,8 @@ nav a::after {
     transition: width 0.3s;
 }
 
-nav a:hover::after {
-    width: 100%;
-}
-
-nav a:hover {
-    color: var(--maroon-primary);
-}
+nav a:hover::after { width: 100%; }
+nav a:hover { color: var(--maroon-primary); }
 
 .menu-toggle {
     display: none;
@@ -114,35 +110,22 @@ nav a:hover {
 }
 
 /* ==========================================
-   HERO SECTION
+   HERO
    ========================================== */
 .hero {
-  background: 
-    linear-gradient(to right, #ffffff 50%, rgba(0,0,0,0) 100%),
-    url("../content/bghero.jpg") no-repeat center center;
-  background-size: cover;
-  width: auto;
-  height: 800px;
-
-  display: flex;             
-  align-items: center;        
-}
-
-.hero::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    right: -20%;
-    width: 800px;
+    background: linear-gradient(to right, #ffffff 50%, rgba(0,0,0,0) 100%),
+                url("../content/bghero.jpg") no-repeat center center;
+    background-size: cover;
+    width: auto;
     height: 800px;
-    background: radial-gradient(circle, var(--maroon-primary) 0%, transparent 70%);
-    opacity: 0.03;
-    border-radius: 50%;
+    display: flex;
+    align-items: center;
 }
 
 .hero-container {
     max-width: 1400px;
     margin: 0 auto;
+    padding: 0 3rem;
     display: grid;
     grid-template-columns: 1.2fr 1fr;
     gap: 4rem;
@@ -152,6 +135,7 @@ nav a:hover {
 }
 
 .hero-content h1 {
+    font-family: 'Playfair Display', Georgia, serif;
     font-size: 4.5rem;
     font-weight: 800;
     color: var(--maroon-light);
@@ -168,11 +152,7 @@ nav a:hover {
     font-weight: 400;
 }
 
-.hero-buttons {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
+.hero-buttons { display: flex; gap: 1rem; flex-wrap: wrap; }
 
 .btn-primary {
     padding: 1rem 2.5rem;
@@ -211,43 +191,12 @@ nav a:hover {
     color: var(--white);
 }
 
-.hero-image {
-    background: linear-gradient(135deg, var(--maroon-primary), var(--maroon-light));
-    height: 500px;
-    border-radius: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 8rem;
-    box-shadow: 0 20px 60px var(--shadow);
-    position: relative;
-    overflow: hidden;
-}
-
-.hero-image::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.1) 50%, transparent 70%);
-    animation: shimmer 3s infinite;
-}
-
-@keyframes shimmer {
-    0%, 100% { transform: translateX(-100%); }
-    50% { transform: translateX(100%); }
-}
-
 /* ==========================================
    SECTIONS
    ========================================== */
-section {
-    padding: 6rem 3rem;
-}
+section { padding: 6rem 3rem; }
 
-.container {
-    max-width: 1400px;
-    margin: 0 auto;
-}
+.container { max-width: 1400px; margin: 0 auto; }
 
 .section-title {
     text-align: center;
@@ -255,8 +204,9 @@ section {
 }
 
 .section-title h2 {
+    font-family: 'Playfair Display', Georgia, serif;
     font-size: 3rem;
-    font-weight: 800;
+    font-weight: 700;
     color: var(--maroon-primary);
     margin-bottom: 1rem;
     letter-spacing: -1px;
@@ -270,11 +220,9 @@ section {
 }
 
 /* ==========================================
-   ABOUT SECTION
+   ABOUT
    ========================================== */
-.about {
-    background: var(--off-white);
-}
+.about { background: var(--off-white); }
 
 .about-grid {
     display: grid;
@@ -283,57 +231,29 @@ section {
     align-items: center;
 }
 
-.about-content {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
+.about-content { display: flex; flex-direction: column; gap: 1.5rem; }
+.about-content p { font-size: 1.1rem; color: var(--text-gray); line-height: 1.8; }
 
-.about-content p {
-    font-size: 1.1rem;
-    color: var(--text-gray);
-    line-height: 1.8;
-}
-
-.stats-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-}
+.stats-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; }
 
 .stat-item {
     background: var(--white);
     padding: 2rem;
     border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
     transition: all 0.3s;
 }
 
-.stat-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px var(--shadow);
-}
+.stat-item:hover { transform: translateY(-5px); box-shadow: 0 8px 30px var(--shadow); }
 
-.stat-number {
-    font-size: 2.5rem;
-    font-weight: 800;
-    color: var(--maroon-primary);
-    margin-bottom: 0.5rem;
-}
-
-.stat-label {
-    color: var(--text-gray);
-    font-size: 0.95rem;
-}
+.stat-number { font-size: 2.5rem; font-weight: 800; color: var(--maroon-primary); margin-bottom: 0.5rem; }
+.stat-label { color: var(--text-gray); font-size: 0.95rem; }
 
 /* ==========================================
-   MENU SECTION
+   MENU
    ========================================== */
-.menu {
-    background: var(--white);
-}
+.menu { background: var(--white); }
 
-/* Menu Filter Tabs */
 .menu-filter-tabs {
     display: flex;
     justify-content: center;
@@ -352,20 +272,6 @@ section {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.filter-tab::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: var(--maroon-primary);
-    transition: left 0.3s ease;
-    z-index: -1;
 }
 
 .filter-tab:hover {
@@ -382,11 +288,6 @@ section {
     box-shadow: 0 4px 20px var(--shadow-hover);
 }
 
-.filter-tab.active::before {
-    left: 0;
-}
-
-/* Menu Grid */
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -397,17 +298,13 @@ section {
     background: var(--white);
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     border: 1px solid var(--gray);
     position: relative;
-    opacity: 1;
-    transform: scale(1);
 }
 
-.menu-card.hidden {
-    display: none;
-}
+.menu-card.hidden { display: none; }
 
 .menu-card:hover {
     transform: translateY(-8px) scale(1.02);
@@ -415,7 +312,6 @@ section {
     border-color: var(--maroon-light);
 }
 
-/* Menu Badge */
 .menu-badge {
     position: absolute;
     top: 15px;
@@ -427,7 +323,7 @@ section {
     font-size: 0.8rem;
     font-weight: 600;
     z-index: 10;
-    box-shadow: 0 2px 10px rgba(139, 0, 0, 0.3);
+    box-shadow: 0 2px 10px rgba(139,0,0,0.3);
     letter-spacing: 0.5px;
 }
 
@@ -443,34 +339,19 @@ section {
     transition: transform 0.4s;
 }
 
-.menu-card:hover .menu-image {
-    transform: scale(1.1);
-}
+.menu-card:hover .menu-image { transform: scale(1.1); }
 
-.menu-image::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.1) 50%, transparent 70%);
-}
-
-.menu-content {
-    padding: 1.8rem;
-}
+.menu-content { padding: 1.8rem; }
 
 .menu-content h3 {
-    font-size: 1.4rem;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.3rem;
     font-weight: 700;
     color: var(--maroon-primary);
     margin-bottom: 1.2rem;
 }
 
-/* Menu List Styling */
-.menu-list {
-    list-style: none;
-    margin-bottom: 1.5rem;
-    padding-left: 0;
-}
+.menu-list { list-style: none; margin-bottom: 1.5rem; padding-left: 0; }
 
 .menu-list li {
     color: var(--text-gray);
@@ -489,7 +370,6 @@ section {
     font-weight: bold;
 }
 
-/* Compact Menu List for Gubug */
 .menu-list-compact {
     list-style: none;
     margin-bottom: 1.5rem;
@@ -525,12 +405,266 @@ section {
     display: inline-block;
 }
 
-/* ==========================================
-   SERVICES SECTION
-   ========================================== */
-.services {
-    background: var(--off-white);
+.menu-content small {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--text-gray);
+    font-style: italic;
+    margin-bottom: 0.5rem;
 }
+
+/* ==========================================
+   WEDDING SECTION
+   ========================================== */
+.wedding-section {
+    background: var(--wedding-bg);
+    padding: 6rem 3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.wedding-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: 
+        radial-gradient(ellipse 60% 40% at 20% 20%, rgba(201,165,90,0.06) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 50% at 80% 80%, rgba(139,0,0,0.3) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.wedding-section .section-title h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: var(--wedding-gold);
+    font-size: 3rem;
+    letter-spacing: 0;
+}
+
+.wedding-section .section-title p {
+    color: var(--wedding-text-muted);
+}
+
+/* Note banner */
+.wedding-note {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: rgba(201, 165, 90, 0.1);
+    border: 1px solid var(--wedding-border);
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 3rem;
+    color: var(--wedding-text-muted);
+    font-size: 0.9rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.note-icon {
+    color: var(--wedding-gold);
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+/* Wedding Grid */
+.wedding-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* Wedding Card */
+.wedding-card {
+    background: var(--wedding-card-bg);
+    border: 1px solid var(--wedding-border);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.wedding-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 48px rgba(0,0,0,0.4);
+}
+
+/* Card Header */
+.wedding-card-header {
+    background: linear-gradient(135deg, var(--maroon-dark) 0%, #6b1a1a 50%, var(--maroon-primary) 100%);
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--wedding-border);
+    position: relative;
+    overflow: hidden;
+}
+
+.wedding-card-header::after {
+    content: '';
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: rgba(201, 165, 90, 0.08);
+}
+
+.wedding-price-info { display: flex; flex-direction: column; }
+
+.wedding-price {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--wedding-gold);
+    line-height: 1;
+}
+
+.wedding-price span {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--wedding-gold-light);
+}
+
+.wedding-pax {
+    font-size: 0.85rem;
+    color: var(--wedding-text-muted);
+    margin-top: 0.3rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.wedding-tagline {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-style: italic;
+    font-size: 0.95rem;
+    color: rgba(201, 165, 90, 0.6);
+    text-align: right;
+    max-width: 120px;
+    line-height: 1.4;
+}
+
+/* Card Body */
+.wedding-body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    padding: 0;
+}
+
+.wedding-col {
+    padding: 1.5rem;
+    border-right: 1px solid var(--wedding-border);
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.wedding-col:last-child { border-right: none; }
+
+.wedding-group h4 {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--wedding-gold);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.6rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--wedding-border);
+}
+
+.wedding-group ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.wedding-group ul li {
+    font-size: 0.8rem;
+    color: var(--wedding-text);
+    padding-left: 1rem;
+    position: relative;
+    line-height: 1.5;
+}
+
+.wedding-group ul li::before {
+    content: '·';
+    position: absolute;
+    left: 0;
+    color: var(--wedding-gold);
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+/* Free bar */
+.wedding-free {
+    background: rgba(201, 165, 90, 0.08);
+    border-top: 1px solid var(--wedding-border);
+    padding: 0.9rem 1.5rem;
+    font-size: 0.8rem;
+    color: var(--wedding-text-muted);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.free-label {
+    background: var(--wedding-gold);
+    color: #2a1010;
+    font-size: 0.65rem;
+    font-weight: 800;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    flex-shrink: 0;
+}
+
+/* CTA below grid */
+.wedding-cta {
+    text-align: center;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.wedding-cta p {
+    color: var(--wedding-text-muted);
+    font-size: 0.95rem;
+}
+
+.wedding-cta .btn-primary {
+    background: var(--wedding-gold);
+    border-color: var(--wedding-gold);
+    color: #2a1010;
+    font-weight: 700;
+}
+
+.wedding-cta .btn-primary:hover {
+    background: var(--wedding-gold-light);
+    border-color: var(--wedding-gold-light);
+    box-shadow: 0 8px 24px rgba(201, 165, 90, 0.3);
+}
+
+/* ==========================================
+   SERVICES
+   ========================================== */
+.services { background: var(--off-white); }
 
 .services-grid {
     display: grid;
@@ -553,30 +687,22 @@ section {
     border-color: var(--maroon-primary);
 }
 
-.service-icon {
-    font-size: 3.5rem;
-    margin-bottom: 1.5rem;
-}
+.service-icon { font-size: 3.5rem; margin-bottom: 1.5rem; }
 
 .service-card h3 {
-    font-size: 1.3rem;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.2rem;
     font-weight: 700;
     color: var(--maroon-primary);
     margin-bottom: 1rem;
 }
 
-.service-card p {
-    color: var(--text-gray);
-    line-height: 1.6;
-}
+.service-card p { color: var(--text-gray); line-height: 1.6; }
 
 /* ==========================================
-   TESTIMONIALS SECTION
+   TESTIMONIALS
    ========================================== */
-.testimonials {
-    background: var(--white);
-    overflow: hidden;
-}
+.testimonials { background: var(--white); overflow: hidden; }
 
 .testimonial-slider-container {
     position: relative;
@@ -584,10 +710,7 @@ section {
     margin: 0 auto;
 }
 
-.testimonial-slider {
-    overflow: hidden;
-    padding: 1rem 0;
-}
+.testimonial-slider { overflow: hidden; padding: 1rem 0; }
 
 .testimonial-track {
     display: flex;
@@ -607,16 +730,9 @@ section {
     flex-direction: column;
 }
 
-.testimonial-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px var(--shadow);
-}
+.testimonial-card:hover { transform: translateY(-5px); box-shadow: 0 8px 30px var(--shadow); }
 
-.stars {
-    color: #FFB800;
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-}
+.stars { color: #FFB800; font-size: 1.2rem; margin-bottom: 1rem; }
 
 .testimonial-text {
     font-style: italic;
@@ -626,13 +742,8 @@ section {
     flex-grow: 1;
 }
 
-.testimonial-author {
-    font-weight: 600;
-    color: var(--maroon-primary);
-    margin-top: auto;
-}
+.testimonial-author { font-weight: 600; color: var(--maroon-primary); margin-top: auto; }
 
-/* Slider Buttons */
 .slider-btn {
     position: absolute;
     top: 50%;
@@ -650,7 +761,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 .slider-btn:hover {
@@ -659,65 +770,25 @@ section {
     transform: translateY(-50%) scale(1.1);
 }
 
-.prev-btn {
-    left: -25px;
-}
+.prev-btn { left: -25px; }
+.next-btn { right: -25px; }
 
-.next-btn {
-    right: -25px;
-}
+.slider-dots { display: flex; justify-content: center; gap: 0.8rem; margin-top: 2rem; }
 
-/* Slider Dots */
-.slider-dots {
-    display: flex;
-    justify-content: center;
-    gap: 0.8rem;
-    margin-top: 2rem;
-}
-
-.dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: var(--gray);
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.dot.active {
-    background: var(--maroon-primary);
-    width: 30px;
-    border-radius: 6px;
-}
-
-.dot:hover {
-    background: var(--maroon-light);
-}
+.dot { width: 12px; height: 12px; border-radius: 50%; background: var(--gray); cursor: pointer; transition: all 0.3s; }
+.dot.active { background: var(--maroon-primary); width: 30px; border-radius: 6px; }
+.dot:hover { background: var(--maroon-light); }
 
 /* ==========================================
-   CONTACT SECTION
+   CONTACT
    ========================================== */
-.contact {
-    background: var(--off-white);
-}
+.contact { background: var(--off-white); }
 
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 4rem;
-}
+.contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 4rem; }
 
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
+.contact-info { display: flex; flex-direction: column; gap: 2rem; }
 
-.contact-item {
-    display: flex;
-    gap: 1.5rem;
-    align-items: start;
-}
+.contact-item { display: flex; gap: 1.5rem; align-items: start; }
 
 .contact-icon {
     font-size: 2rem;
@@ -728,37 +799,28 @@ section {
     justify-content: center;
     background: var(--white);
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
-.contact-item h3 {
-    font-size: 1.1rem;
-    color: var(--maroon-primary);
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-}
-
-.contact-item p {
-    color: var(--text-gray);
-}
+.contact-item h3 { font-size: 1.1rem; color: var(--maroon-primary); margin-bottom: 0.5rem; font-weight: 600; }
+.contact-item p { color: var(--text-gray); }
 
 .contact-form {
     background: var(--white);
     padding: 3rem;
     border-radius: 20px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.05);
 }
 
 .contact-form h3 {
+    font-family: 'Playfair Display', Georgia, serif;
     font-size: 1.5rem;
     color: var(--maroon-primary);
     margin-bottom: 2rem;
     font-weight: 700;
 }
 
-.form-group {
-    margin-bottom: 1.5rem;
-}
+.form-group { margin-bottom: 1.5rem; }
 
 .contact-form input,
 .contact-form textarea {
@@ -779,10 +841,7 @@ section {
     background: var(--white);
 }
 
-.contact-form textarea {
-    min-height: 150px;
-    resize: vertical;
-}
+.contact-form textarea { min-height: 150px; resize: vertical; }
 
 .submit-btn {
     width: 100%;
@@ -797,10 +856,7 @@ section {
     transition: all 0.3s;
 }
 
-.submit-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px var(--shadow-hover);
-}
+.submit-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px var(--shadow-hover); }
 
 /* ==========================================
    FOOTER
@@ -812,6 +868,4 @@ footer {
     text-align: center;
 }
 
-footer p {
-    opacity: 0.9;
-}
+footer p { opacity: 0.9; }

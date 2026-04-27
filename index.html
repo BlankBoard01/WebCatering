@@ -6,8 +6,9 @@
     <meta name="description" content="Azzalea Catering - Layanan Catering Premium di Sleman, Yogyakarta">
     <meta name="keywords" content="catering, sleman, yogyakarta, catering pernikahan, catering acara">
     <title>Azzalea Catering - Catering Premium Sleman</title>
-    
-    <!-- CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -21,6 +22,7 @@
                 <li><a href="#home">Beranda</a></li>
                 <li><a href="#about">Tentang</a></li>
                 <li><a href="#menu">Menu</a></li>
+                <li><a href="#wedding">Wedding</a></li>
                 <li><a href="#services">Layanan</a></li>
                 <li><a href="#testimonials">Testimoni</a></li>
                 <li><a href="#contact">Kontak</a></li>
@@ -39,9 +41,6 @@
                     <a href="#menu" class="btn-secondary">Lihat Menu</a>
                 </div>
             </div>
-            <!-- <div class="hero-image">
-                <img src="content/headhero.jpg" alt="Azzalea Catering">
-            </div> -->
         </div>
     </section>
 
@@ -88,17 +87,131 @@
                 <p>Beragam pilihan menu sesuai kebutuhan dan budget Anda</p>
             </div>
             
-            <!-- Menu Filter Tabs -->
             <div class="menu-filter-tabs">
                 <button class="filter-tab active" data-category="all">Semua Menu</button>
+                <button class="filter-tab" data-category="nasibox">Paket Nasi Box</button>
                 <button class="filter-tab" data-category="kenduri">Paket Kenduri</button>
-                <button class="filter-tab" data-category="nasibox">Nasi Box</button>
-                <button class="filter-tab" data-category="prasmanan">Prasmanan</button>
-                <button class="filter-tab" data-category="gubug">Gubug</button>
+                <button class="filter-tab" data-category="hantaran">Paket Hantaran</button>
+                <button class="filter-tab" data-category="snackbox">Snack Box</button>  
+                <button class="filter-tab" data-category="tumpeng">Tumpeng</button>
+                <button class="filter-tab" data-category="prasmanan">Paket Prasmanan</button>
+                <button class="filter-tab" data-category="stall">Menu Stall</button>
+                <button class="filter-tab" data-category="piringterbang">Paket Piring Terbang</button>
             </div>
             
             <div class="menu-grid">
-                <!-- PAKET KENDURI -->
+                <!-- ===== NASI BOX ===== -->
+                <div class="menu-card" data-category="nasibox">
+                    <div class="menu-badge">Nasi Box</div>
+                    <div class="menu-image">🍱</div>
+                    <div class="menu-content">
+                        <h3>Nasi Box 12K</h3>
+                        <ul class="menu-list">
+                            <li>Nasi Putih</li>
+                            <li>Ayam/Ikan (Goreng/Bakar)</li>
+                            <li>Sambal</li>
+                            <li>Lalap</li>
+                        </ul>
+                        <div class="price">Rp 12.000/box</div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nasibox">
+                    <div class="menu-badge">Nasi Box</div>
+                    <div class="menu-image">🍱</div>
+                    <div class="menu-content">
+                        <h3>Nasi Box 14K</h3>
+                        <ul class="menu-list">
+                            <li>Nasi Putih</li>
+                            <li>Ayam/Ikan (Goreng/Bakar)</li>
+                            <li>Sambal</li>
+                            <li>Lalap</li>
+                            <li>Ca Sayur</li>
+                        </ul>
+                        <div class="price">Rp 14.000/box</div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nasibox">
+                    <div class="menu-badge">Nasi Box</div>
+                    <div class="menu-image">🍱</div>
+                    <div class="menu-content">
+                        <h3>Nasi Box 17K</h3>
+                        <ul class="menu-list">
+                            <li>Nasi Putih</li>
+                            <li>Ayam/Ikan (Goreng/Bakar)</li>
+                            <li>Sambal</li>
+                            <li>Lalap</li>
+                            <li>Ca Sayur</li>
+                            <li>Tahu/Tempe</li>
+                            <li>Kerupuk</li>
+                        </ul>
+                        <div class="price">Rp 17.000/box</div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nasibox">
+                    <div class="menu-badge">Nasi Box</div>
+                    <div class="menu-image">🍱</div>
+                    <div class="menu-content">
+                        <h3>Nasi Box 20K</h3>
+                        <ul class="menu-list">
+                            <li>Nasi Putih</li>
+                            <li>Ayam/Ikan (Goreng/Bakar)</li>
+                            <li>Sambal</li>
+                            <li>Lalap</li>
+                            <li>Ca Sayur</li>
+                            <li>Tahu/Tempe</li>
+                            <li>Kerupuk</li>
+                            <li>Buah Potong</li>
+                        </ul>
+                        <div class="price">Rp 20.000/box</div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nasibox">
+                    <div class="menu-badge">Nasi Box</div>
+                    <div class="menu-image">🍱</div>
+                    <div class="menu-content">
+                        <h3>Nasi Box 22K</h3>
+                        <ul class="menu-list">
+                            <li>Nasi Putih</li>
+                            <li>Ayam/Ikan (Goreng/Bakar)</li>
+                            <li>Sambal</li>
+                            <li>Lalap</li>
+                            <li>Ca Sayur</li>
+                            <li>Tahu/Tempe</li>
+                            <li>Sambal Kentang</li>
+                            <li>Acar</li>
+                            <li>Kerupuk</li>
+                            <li>Buah Potong</li>
+                        </ul>
+                        <div class="price">Rp 22.000/box</div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nasibox">
+                    <div class="menu-badge">Nasi Box</div>
+                    <div class="menu-image">🍱</div>
+                    <div class="menu-content">
+                        <h3>Nasi Box 27K</h3>
+                        <ul class="menu-list">
+                            <li>Nasi Putih</li>
+                            <li>Ayam/Ikan (Goreng/Bakar)</li>
+                            <li>Sambal</li>
+                            <li>Lalap</li>
+                            <li>Ca Sayur</li>
+                            <li>Tahu/Tempe</li>
+                            <li>Sambal Kentang</li>
+                            <li>Fillet Ikan Goreng</li>
+                            <li>Kerupuk</li>
+                            <li>Buah Potong</li>
+                        </ul>
+                        <div class="price">Rp 27.000/box</div>
+                    </div>
+                </div>
+
+                <!-- ===== KENDURI ===== -->
                 <div class="menu-card" data-category="kenduri">
                     <div class="menu-badge">Kenduri</div>
                     <div class="menu-image">🍛</div>
@@ -110,308 +223,1231 @@
                             <li>Mie Goreng/Soon Lombok Ijo</li>
                             <li>Gudangan</li>
                             <li>Ayam Goreng</li>
-                            <li>Tempe, Telur</li>
+                            <li>Tempe</li>
+                            <li>Telur</li>
                             <li>Kerupuk + Peyek</li>
+                            <li>Buah</li>
                         </ul>
                         <div class="price">Rp 30.000/pax</div>
                     </div>
                 </div>
-                
+
                 <div class="menu-card" data-category="kenduri">
                     <div class="menu-badge">Kenduri</div>
                     <div class="menu-image">🍛</div>
                     <div class="menu-content">
                         <h3>Paket Kenduri 35K</h3>
                         <ul class="menu-list">
-                            <li>Nasi, Nasi Gurih</li>
+                            <li>Nasi</li>
                             <li>Sambal Goreng Kentang Krecek</li>
                             <li>Mie Goreng/Soon Lombok Ijo</li>
-                            <li>Gudangan, Ayam Goreng</li>
-                            <li>Tempe, Telur, Perkedel</li>
-                            <li>Kerupuk + Peyek, Buah, Jajan Pasar</li>
+                            <li>Gudangan</li>
+                            <li>Nasi Gurih</li>
+                            <li>Ayam Goreng</li>
+                            <li>Tempe</li>
+                            <li>Telur</li>
+                            <li>Perkedel</li>
+                            <li>Kerupuk + Peyek</li>
+                            <li>Buah</li>
+                            <li>Jajan Pasar</li>
                         </ul>
                         <div class="price">Rp 35.000/pax</div>
                     </div>
                 </div>
-                
+
                 <div class="menu-card" data-category="kenduri">
                     <div class="menu-badge">Kenduri</div>
                     <div class="menu-image">🍛</div>
                     <div class="menu-content">
                         <h3>Paket Kenduri 40K</h3>
                         <ul class="menu-list">
-                            <li>Nasi, Nasi Gurih</li>
+                            <li>Nasi</li>
                             <li>Sambal Goreng Kentang Krecek + Telur Puyuh</li>
-                            <li>Mie Goreng/Soon Lombok Ijo, Gudangan</li>
-                            <li>Ayam Goreng, Tumis Janggel/Ampela Lombok Ijo</li>
-                            <li>Tempe, Telur, Perkedel, Buah + Snack Ringan</li>
+                            <li>Mie Goreng/Soon Lombok Ijo</li>
+                            <li>Tumis Jenggel/Ampela Lombok Ijo</li>
+                            <li>Gudangan</li>
+                            <li>Ayam Goreng</li>
+                            <li>Tempe</li>
+                            <li>Perkedel</li>
+                            <li>Telur</li>
+                            <li>Nasi Gurih</li>
+                            <li>Buah + Snack Ringan</li>
                             <li>Kerupuk + Peyek</li>
                         </ul>
                         <div class="price">Rp 40.000/pax</div>
                     </div>
                 </div>
-                
+
                 <div class="menu-card" data-category="kenduri">
                     <div class="menu-badge">Kenduri</div>
                     <div class="menu-image">🍛</div>
                     <div class="menu-content">
                         <h3>Paket Kenduri 45K</h3>
                         <ul class="menu-list">
-                            <li>Nasi, Nasi Gurih</li>
+                            <li>Nasi</li>
                             <li>Sambal Goreng Kentang Krecek + Telur Puyuh</li>
-                            <li>Mie Goreng/Soon Lombok Ijo, Gudangan</li>
-                            <li>Ayam Goreng, Snack berat</li>
-                            <li>Tumis Janggel/Ampela Lombok Ijo</li>
-                            <li>Tempe, Telur, Perkedel, Buah, Kerupuk + Peyek</li>
+                            <li>Mie Goreng/Soon Lombok Ijo</li>
+                            <li>Tumis Jenggel/Ampela Lombok Ijo</li>
+                            <li>Gudangan</li>
+                            <li>Ayam Goreng</li>
+                            <li>Tempe</li>
+                            <li>Perkedel</li>
+                            <li>Telur</li>
+                            <li>Nasi Gurih</li>
+                            <li>Buah</li>
+                            <li>Snack Berat</li>
+                            <li>Kerupuk + Peyek</li>
                         </ul>
                         <div class="price">Rp 45.000/pax</div>
                     </div>
                 </div>
-                
-                <!-- PAKET NASI BOX -->
-                <div class="menu-card" data-category="nasibox">
-                    <div class="menu-badge">Nasi Box</div>
-                    <div class="menu-image">🍱</div>
+
+                <!-- ===== HANTARAN ===== -->
+                <div class="menu-card" data-category="hantaran">
+                    <div class="menu-badge">Hantaran</div>
+                    <div class="menu-image">🥡</div>
                     <div class="menu-content">
-                        <h3>Nasi Box 10K</h3>
+                        <h3>Paket Hantaran 30K</h3>
                         <ul class="menu-list">
-                            <li>Nasi Ayam/Ikan (Goreng/Bakar)</li>
-                            <li>Sambal Lalap</li>
-                        </ul>
-                        <div class="price">Rp 10.000/box</div>
-                    </div>
-                </div>
-                
-                <div class="menu-card" data-category="nasibox">
-                    <div class="menu-badge">Nasi Box</div>
-                    <div class="menu-image">🍱</div>
-                    <div class="menu-content">
-                        <h3>Nasi Box 12K</h3>
-                        <ul class="menu-list">
-                            <li>Nasi Ayam/Ikan (Goreng/Bakar)</li>
-                            <li>Sambal Lalap</li>
-                            <li>Ca Sayur</li>
-                        </ul>
-                        <div class="price">Rp 12.000/box</div>
-                    </div>
-                </div>
-                
-                <div class="menu-card" data-category="nasibox">
-                    <div class="menu-badge">Nasi Box</div>
-                    <div class="menu-image">🍱</div>
-                    <div class="menu-content">
-                        <h3>Nasi Box 15K</h3>
-                        <ul class="menu-list">
-                            <li>Nasi Ayam/Ikan (Goreng/Bakar)</li>
-                            <li>Sambal Lalap</li>
-                            <li>Ca Sayur, Tahu/Tempe</li>
+                            <li>Nasi</li>
+                            <li>Ayam 1/4</li>
+                            <li>Sambal Goreng Kentang</li>
+                            <li>Mie Goreng</li>
                             <li>Kerupuk</li>
                         </ul>
-                        <div class="price">Rp 15.000/box</div>
+                        <div class="price">Rp 30.000</div>
                     </div>
                 </div>
-                
-                <div class="menu-card" data-category="nasibox">
-                    <div class="menu-badge">Nasi Box</div>
-                    <div class="menu-image">🍱</div>
+
+                <div class="menu-card" data-category="hantaran">
+                    <div class="menu-badge">Hantaran</div>
+                    <div class="menu-image">🥡</div>
                     <div class="menu-content">
-                        <h3>Nasi Box 18K</h3>
+                        <h3>Paket Hantaran 40K</h3>
                         <ul class="menu-list">
-                            <li>Nasi Ayam/Ikan (Bakar/Goreng)</li>
-                            <li>Sambal Lalap, Ca Sayur</li>
-                            <li>Tahu/Tempe, Sambal Kentang</li>
-                            <li>Kerupuk, Buah Potong</li>
+                            <li>Nasi</li>
+                            <li>Ayam 1/4</li>
+                            <li>Sambal Goreng Kentang</li>
+                            <li>Mie Goreng</li>
+                            <li>Telur (3)</li>
+                            <li>Kerupuk</li>
                         </ul>
-                        <div class="price">Rp 18.000/box</div>
+                        <div class="price">Rp 40.000</div>
                     </div>
                 </div>
-                
-                <div class="menu-card" data-category="nasibox">
-                    <div class="menu-badge">Nasi Box</div>
-                    <div class="menu-image">🍱</div>
+
+                <div class="menu-card" data-category="hantaran">
+                    <div class="menu-badge">Hantaran</div>
+                    <div class="menu-image">🥡</div>
                     <div class="menu-content">
-                        <h3>Nasi Box 20K</h3>
+                        <h3>Paket Hantaran 45K</h3>
                         <ul class="menu-list">
-                            <li>Nasi Ayam/Ikan (Bakar/Goreng)</li>
-                            <li>Sambal Lalap, Ca Sayur</li>
-                            <li>Tahu/Tempe, Sambal Kentang</li>
-                            <li>Acar/Trancam, Kerupuk, Buah</li>
+                            <li>Nasi</li>
+                            <li>Ayam 1/2</li>
+                            <li>Sambal Lalap</li>
+                            <li>Kerupuk</li>
                         </ul>
-                        <div class="price">Rp 20.000/box</div>
+                        <div class="price">Rp 45.000</div>
                     </div>
                 </div>
-                
-                <div class="menu-card" data-category="nasibox">
-                    <div class="menu-badge">Nasi Box</div>
-                    <div class="menu-image">🍱</div>
+
+                <div class="menu-card" data-category="hantaran">
+                    <div class="menu-badge">Hantaran</div>
+                    <div class="menu-image">🥡</div>
                     <div class="menu-content">
-                        <h3>Nasi Box 25K</h3>
+                        <h3>Paket Hantaran 50K</h3>
                         <ul class="menu-list">
-                            <li>Nasi Ayam/Ikan (Goreng/Bakar)</li>
-                            <li>Ca Sayur, Tahu/Tempe</li>
-                            <li>Sambal Kentang, Filet Ikan Goreng</li>
-                            <li>Kerupuk, Buah</li>
-                        </ul>
-                        <div class="price">Rp 25.000/box</div>
-                    </div>
-                </div>
-                
-                <!-- PAKET PRASMANAN -->
-                <div class="menu-card" data-category="prasmanan">
-                    <div class="menu-badge">Prasmanan</div>
-                    <div class="menu-image">🍽️</div>
-                    <div class="menu-content">
-                        <h3>Paket Prasmanan 20K</h3>
-                        <ul class="menu-list">
-                            <li>Nasi Putih</li>
-                            <li>Sop Kombinasi</li>
+                            <li>Nasi</li>
+                            <li>Ayam 1/2</li>
+                            <li>Sambal Lalap</li>
                             <li>Sambal Goreng Krecek</li>
-                            <li>Ayam fillet goreng tepung saus asam manis / saus asam pedas</li>
-                            <li>Gulai telur / Telur semur / Telur balado / Telur bumbu bali / Fuyunghai</li>
-                            <li>Acar, Kerupuk / Rambak, Air Mineral, Teh, Soft Drink, Buah Potong</li>
+                            <li>Kerupuk</li>
                         </ul>
-                        <div class="price">Rp 20.000/pax</div>
+                        <div class="price">Rp 50.000</div>
                     </div>
                 </div>
-                
+
+                <div class="menu-card" data-category="hantaran">
+                    <div class="menu-badge">Hantaran</div>
+                    <div class="menu-image">🥡</div>
+                    <div class="menu-content">
+                        <h3>Paket Hantaran 55K (A)</h3>
+                        <ul class="menu-list">
+                            <li>Nasi</li>
+                            <li>Ayam 1/2</li>
+                            <li>Sambal Lalap</li>
+                            <li>Sambal Goreng Krecek</li>
+                            <li>Telur Semur (3)</li>
+                            <li>Kerupuk</li>
+                        </ul>
+                        <div class="price">Rp 55.000</div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="hantaran">
+                    <div class="menu-badge">Hantaran</div>
+                    <div class="menu-image">🥡</div>
+                    <div class="menu-content">
+                        <h3>Paket Hantaran 55K (B)</h3>
+                        <ul class="menu-list">
+                            <li>Ayam Utuh</li>
+                            <li>Sambal</li>
+                            <li>Lalap</li>
+                        </ul>
+                        <small>*Ayam bakar/bacem +Rp 5.000</small>
+                        <div class="price">Rp 55.000</div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="hantaran">
+                    <div class="menu-badge">Hantaran</div>
+                    <div class="menu-image">🥡</div>
+                    <div class="menu-content">
+                        <h3>Paket Hantaran 70K</h3>
+                        <ul class="menu-list">
+                            <li>Nasi</li>
+                            <li>Ayam Utuh</li>
+                            <li>Sambal Lalap</li>
+                            <li>Sambal Goreng Krecek</li>
+                            <li>Telur (3)</li>
+                            <li>Kerupuk</li>
+                        </ul>
+                        <small>*Ayam bakar/bacem +Rp 5.000</small>
+                        <div class="price">Rp 70.000</div>
+                    </div>
+                </div>
+
+                <!-- ===== SNACK BOX ===== -->
+                <div class="menu-card" data-category="snackbox">
+                    <div class="menu-badge">Snack Box</div>
+                    <div class="menu-image">🧁</div>
+                    <div class="menu-content">
+                        <h3>Snack Box Paket A</h3>
+                        <ul class="menu-list">
+                            <li>Arem-arem / Jadah Tempe</li>
+                            <li>Risol / Lumpia / Pastel / Martabak</li>
+                            <li>Kletik-kletik</li>
+                        </ul>
+                        <div class="price">Rp 6.000</div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="snackbox">
+                    <div class="menu-badge">Snack Box</div>
+                    <div class="menu-image">🧁</div>
+                    <div class="menu-content">
+                        <h3>Snack Box Paket B</h3>
+                        <ul class="menu-list">
+                            <li>Lemper / Semar Mendem</li>
+                            <li>Risol</li>
+                            <li>Pudding</li>
+                            <li>Kletik-kletik</li>
+                        </ul>
+                        <div class="price">Rp 8.000</div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="snackbox">
+                    <div class="menu-badge">Snack Box</div>
+                    <div class="menu-image">🧁</div>
+                    <div class="menu-content">
+                        <h3>Snack Box Paket C</h3>
+                        <ul class="menu-list">
+                            <li>Lemper / Arem-arem</li>
+                            <li>Risol / Lumpia</li>
+                            <li>Roll Cake</li>
+                            <li>Kletik-kletik</li>
+                            <li>Air Mineral Gelas</li>
+                        </ul>
+                        <div class="price">Rp 12.000</div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="snackbox">
+                    <div class="menu-badge">Snack Box</div>
+                    <div class="menu-image">🧁</div>
+                    <div class="menu-content">
+                        <h3>Snack Box Paket D</h3>
+                        <ul class="menu-list">
+                            <li>Lemper / Arem-arem</li>
+                            <li>Pastel Ayam</li>
+                            <li>Bolen Pisang</li>
+                            <li>Pudding</li>
+                            <li>Kletik-kletik</li>
+                            <li>Air Mineral Botol</li>
+                        </ul>
+                        <div class="price">Rp 15.000</div>
+                    </div>
+                </div>
+
+                <!-- ===== TUMPENG ===== -->
+                <div class="menu-card" data-category="tumpeng">
+                    <div class="menu-badge">Tumpeng</div>
+                    <div class="menu-image">🎂</div>
+                    <div class="menu-content">
+                        <h3>Paket Tumpeng</h3>
+                        <ul class="menu-list">
+                            <li>Nasi Putih / Kuning</li>
+                            <li>Kering Kentang / Sambal Goreng</li>
+                            <li>Olahan Mie</li>
+                            <li>Ayam Bakar / Goreng</li>
+                            <li>Telur Balado</li>
+                            <li>Urap</li>
+                            <li>Perkedel</li>
+                            <li>Acar</li>
+                        </ul>
+                        <small>*Harga sesuai besar/kecil tumpeng & porsi pesanan</small>
+                        <div class="price">Harga Custom</div>
+                    </div>
+                </div>
+
+                <!-- ===== PRASMANAN ===== -->
                 <div class="menu-card" data-category="prasmanan">
                     <div class="menu-badge">Prasmanan</div>
                     <div class="menu-image">🍽️</div>
                     <div class="menu-content">
-                        <h3>Paket Prasmanan 23K</h3>
+                        <h3>Paket Prasmanan A</h3>
                         <ul class="menu-list">
-                            <li>Nasi Putih</li>
-                            <li>Sup Rolade sosis</li>
-                            <li>Sambal Goreng Ati Krecek</li>
-                            <li>Ikan goreng tepung saos asam manis / saos asam pedas</li>
+                            <li>Nasi</li>
+                            <li>Sop Rolade Bakso</li>
+                            <li>Sambal Goreng Kentang / Ampela Ati Krecek</li>
+                            <li>Olahan Ayam (Semur/Bakar/Bacem/Rendang/Fillet/Goreng/Kremes)</li>
+                            <li>Olahan Telur (Puyuh, Balado, Gulai, Rendang, Semur)</li>
+                            <li>Acar</li>
+                            <li>Kerupuk / Rambak</li>
+                            <li>Buah Potong</li>
+                            <li>Teh & Air Mineral</li>
+                        </ul>
+                        <div class="price">Rp 22.000/pax</div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="prasmanan">
+                    <div class="menu-badge">Prasmanan</div>
+                    <div class="menu-image">🍽️</div>
+                    <div class="menu-content">
+                        <h3>Paket Prasmanan B</h3>
+                        <ul class="menu-list">
+                            <li>Nasi</li>
+                            <li>Sop Rolade Kombinasi</li>
+                            <li>Sambal Goreng Kentang / Ampela Ati Krecek</li>
+                            <li>Olahan Ayam (Semur/Bakar/Bacem/Rendang/Fillet/Goreng/Kremes)</li>
                             <li>Galantin</li>
-                            <li>Mie soon ayu jamur / Bihun goreng / Kwetiaw</li>
-                            <li>Acar / Trancam, Kerupuk udang, Teh, Soft Drink, Buah Potong</li>
+                            <li>Olahan Mie (Mie Soon Ayu, Kwetiaw, Mie Goreng, Bihun)</li>
+                            <li>Acar / Trancam</li>
+                            <li>Kerupuk / Rambak</li>
+                            <li>Buah Potong</li>
+                            <li>Teh, Air Mineral & Soft Drink</li>
                         </ul>
-                        <div class="price">Rp 23.000/pax</div>
+                        <div class="price">Rp 24.000/pax</div>
                     </div>
                 </div>
-                
+
                 <div class="menu-card" data-category="prasmanan">
                     <div class="menu-badge">Prasmanan</div>
                     <div class="menu-image">🍽️</div>
                     <div class="menu-content">
-                        <h3>Paket Prasmanan 27K</h3>
+                        <h3>Paket Prasmanan C</h3>
                         <ul class="menu-list">
-                            <li>Nasi Putih</li>
-                            <li>Sup Rolade Kombinasi</li>
-                            <li>Sambal goreng krecek</li>
-                            <li>Semur bola-bola daging</li>
-                            <li>Ayam bakar / Ayam goreng / Ayam semur / Rica-Rica Ayam / Ayam lada hitam</li>
-                            <li>Gurameh goreng tepung</li>
-                            <li>Capcay / Oseng daun kates / Mie soon Lombok ijo</li>
-                            <li>Acar / Trancam / Karedok, Krupuk udang, The, Air mineral, Soft Drink, Buah potong, Ice cream</li>
+                            <li>Nasi</li>
+                            <li>Sop Kombinasi Sosis, Rolade dll</li>
+                            <li>Sambal Goreng Krecek</li>
+                            <li>Olahan Ayam (Semur/Bakar/Bacem/Rendang/Fillet/Goreng/Kremes)</li>
+                            <li>Ikan Fillet Goreng Tepung Saos Asam Manis/Pedas</li>
+                            <li>Capcay / Oseng D.Kates / Olahan Mie</li>
+                            <li>Acar / Trancam / Karedok</li>
+                            <li>Kerupuk / Rambak</li>
+                            <li>Buah Potong</li>
+                            <li>Teh, Air Mineral & Soft Drink</li>
                         </ul>
-                        <div class="price">Rp 27.000/pax</div>
+                        <small>*Min. order 200 pax — Free Es Cream</small>
+                        <div class="price">Rp 28.000/pax</div>
                     </div>
                 </div>
-                
+
                 <div class="menu-card" data-category="prasmanan">
                     <div class="menu-badge">Prasmanan</div>
                     <div class="menu-image">🍽️</div>
                     <div class="menu-content">
-                        <h3>Paket Prasmanan 37K</h3>
+                        <h3>Paket Prasmanan D</h3>
                         <ul class="menu-list">
-                            <li>Nasi Putih</li>
-                            <li>Sup Kombinasi</li>
-                            <li>Sambal goreng krecek bola-bola daging</li>
-                            <li>Daging sapi lada hitam / Daging rendang</li>
-                            <li>Pal Lay Bakso</li>
-                            <li>Ikan dori goreng tepung</li>
-                            <li>Galantin</li>
-                            <li>Acar / Trancam / Karedok, Krupuk udang, Teh, Air mineral, Soft Drink / Infus Water, Buah potong, Ice cream</li>
+                            <li>Nasi</li>
+                            <li>Sop Kombinasi (Sayur, Rolade, Sosis, Jamur, Bakso)</li>
+                            <li>Sambal Goreng Krecek</li>
+                            <li>Olahan Ayam (Semur/Bakar/Bacem/Rendang/Fillet/Goreng/Kremes)</li>
+                            <li>Gurameh Asam Manis / Pedas</li>
+                            <li>Olahan Daging Sapi</li>
+                            <li>Oseng Kombinasi</li>
+                            <li>Olahan Mie (Mie Soon Ayu, Kwetiaw, Mie Goreng, Bihun)</li>
+                            <li>Acar / Trancam / Karedok</li>
+                            <li>Kerupuk / Rambak</li>
+                            <li>Buah Potong</li>
+                            <li>Teh, Air Mineral, Soft Drink & Es Cream</li>
                         </ul>
-                        <div class="price">Rp 37.000/pax</div>
+                        <div class="price">Rp 33.000/pax</div>
                     </div>
                 </div>
-                
-                <!-- PAKET GUBUG -->
-                <div class="menu-card" data-category="gubug">
-                    <div class="menu-badge">Gubug</div>
-                    <div class="menu-image">🥙</div>
+
+                <!-- ===== STALL ===== -->
+                <div class="menu-card" data-category="stall">
+                    <div class="menu-badge">Stall</div>
+                    <div class="menu-image">🍹</div>
                     <div class="menu-content">
-                        <h3>Menu Gubug 3K</h3>
+                        <h3>Stall 3K</h3>
                         <ul class="menu-list-compact">
-                            <li>Dawet ayu</li>
-                            <li>Dawet hitam</li>
-                            <li>Wedang uwuh</li>
-                            <li>Aneka juice</li>
-                            <li>Wedang sereh</li>
+                            <li>Dawet Ayu</li>
+                            <li>Dawet Hitam</li>
+                            <li>Wedang Uwuh</li>
+                            <li>Aneka Juice</li>
+                            <li>Wedang Sereh</li>
                         </ul>
                         <div class="price">Rp 3.000/porsi</div>
                     </div>
                 </div>
-                
-                <div class="menu-card" data-category="gubug">
-                    <div class="menu-badge">Gubug</div>
-                    <div class="menu-image">🥙</div>
+
+                <div class="menu-card" data-category="stall">
+                    <div class="menu-badge">Stall</div>
+                    <div class="menu-image">🍜</div>
                     <div class="menu-content">
-                        <h3>Menu Gubug 5K</h3>
+                        <h3>Stall 5K</h3>
                         <ul class="menu-list-compact">
                             <li>Es Campur</li>
                             <li>Es Kuwut</li>
-                            <li>Es teler</li>
+                            <li>Es Teller</li>
                             <li>Es Doger</li>
                             <li>Es Degan</li>
                             <li>Rujak Es Cream</li>
-                            <li>Es cream puding</li>
+                            <li>Es Cream Pudding</li>
                             <li>Sup Buah</li>
                             <li>Martabak</li>
-                            <li>Bakso ayam / Bakso Kawi</li>
+                            <li>Bakso Ayam / Bakso Kawi</li>
                             <li>Gado-Gado</li>
                             <li>Sempol</li>
-                            <li>Lontong sayur</li>
+                            <li>Lontong Sayur</li>
                             <li>Soto Ayam</li>
                             <li>Kupat Tahu</li>
                         </ul>
                         <div class="price">Rp 5.000/porsi</div>
                     </div>
                 </div>
-                
-                <div class="menu-card" data-category="gubug">
-                    <div class="menu-badge">Gubug</div>
-                    <div class="menu-image">🥙</div>
+
+                <div class="menu-card" data-category="stall">
+                    <div class="menu-badge">Stall</div>
+                    <div class="menu-image">🍢</div>
                     <div class="menu-content">
-                        <h3>Menu Gubug 7K</h3>
+                        <h3>Stall 7K</h3>
                         <ul class="menu-list-compact">
                             <li>Dimsum</li>
-                            <li>Bakso daging / Bakso ikan</li>
-                            <li>Siomay ikan / ayam</li>
+                            <li>Bakso Daging / Bakso Ikan</li>
+                            <li>Siomay Ikan / Ayam</li>
                             <li>Batagor</li>
-                            <li>Sate ayam</li>
+                            <li>Sate Ayam</li>
                             <li>Lontong Kikil</li>
-                            <li>Empek-empek</li>
-                            <li>Soto Daging / Soto lesah / Soto Sulung</li>
-                            <li>Mie Jawa</li>
+                            <li>Pempek</li>
+                            <li>Soto Daging / Soto Lesah</li>
+                            <li>Bakmie Jawa</li>
                         </ul>
                         <div class="price">Rp 7.000/porsi</div>
                     </div>
                 </div>
-                
-                <div class="menu-card" data-category="gubug">
-                    <div class="menu-badge">Gubug</div>
-                    <div class="menu-image">🥙</div>
+
+                <div class="menu-card" data-category="stall">
+                    <div class="menu-badge">Stall</div>
+                    <div class="menu-image">🥩</div>
                     <div class="menu-content">
-                        <h3>Menu Gubug 10K</h3>
+                        <h3>Stall 10K</h3>
                         <ul class="menu-list-compact">
-                            <li>Empal gentong</li>
+                            <li>Empal Gentong</li>
                             <li>Zuppa Soup</li>
                             <li>Tengkleng</li>
                             <li>Sop Buntut</li>
-                            <li>Nasi rawon</li>
-                            <li>Tongseng ayam</li>
-                            <li>Opor ayam</li>
-                            <li>Opor sapi</li>
-                            <li>Tongseng daging</li>
+                            <li>Nasi Rawon</li>
+                            <li>Tongseng Ayam</li>
+                            <li>Opor Ayam</li>
+                            <li>Opor Sapi</li>
+                            <li>Tongseng Daging</li>
                         </ul>
                         <div class="price">Rp 10.000/porsi</div>
                     </div>
                 </div>
+
+                <!-- ===== PIRING TERBANG ===== -->
+                <div class="menu-card" data-category="piringterbang">
+                    <div class="menu-badge">Piring Terbang</div>
+                    <div class="menu-image">🍛</div>
+                    <div class="menu-content">
+                        <h3>Racikan / Piring Terbang A</h3>
+                        <ul class="menu-list">
+                            <li>Teh Manis</li>
+                            <li>Snack 2 Macam</li>
+                            <li>Sup Manten</li>
+                            <li>Es Cream</li>
+                            <li>Nasi Putih</li>
+                            <li>Sambal Goreng Krecek Kentang</li>
+                            <li>Olahan Ayam</li>
+                            <li>Capcay / Mie Soon Ayu</li>
+                            <li>Telur Puyuh Bacem/Semur</li>
+                            <li>Acar</li>
+                            <li>Kerupuk</li>
+                        </ul>
+                        <div class="price">Rp 25.000/pax</div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="piringterbang">
+                    <div class="menu-badge">Piring Terbang</div>
+                    <div class="menu-image">🍛</div>
+                    <div class="menu-content">
+                        <h3>Racikan / Piring Terbang B</h3>
+                        <ul class="menu-list">
+                            <li>Teh Manis</li>
+                            <li>Snack 3 Macam</li>
+                            <li>Sup Kombinasi</li>
+                            <li>Es Campur</li>
+                            <li>Nasi Putih</li>
+                            <li>Sambal Goreng Krecek Ati Ampela</li>
+                            <li>Sate Ayam</li>
+                            <li>Capcay / Mie Soon Ayu / Mie Goreng</li>
+                            <li>Acar</li>
+                            <li>Buah Potong</li>
+                            <li>Kerupuk</li>
+                        </ul>
+                        <div class="price">Rp 28.000/pax</div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="piringterbang">
+                    <div class="menu-badge">Piring Terbang</div>
+                    <div class="menu-image">🍛</div>
+                    <div class="menu-content">
+                        <h3>Racikan / Piring Terbang C</h3>
+                        <ul class="menu-list">
+                            <li>Teh Manis</li>
+                            <li>Snack 3 Macam</li>
+                            <li>Sup Manten</li>
+                            <li>Pudding Es Cream</li>
+                            <li>Nasi Putih</li>
+                            <li>Sambal Goreng Krecek Bola-bola Daging</li>
+                            <li>Galantin</li>
+                            <li>Fillet Ikan Goreng Tepung</li>
+                            <li>Oseng Kombinasi</li>
+                            <li>Acar</li>
+                            <li>Buah Potong</li>
+                            <li>Kerupuk</li>
+                        </ul>
+                        <div class="price">Rp 31.000/pax</div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="piringterbang">
+                    <div class="menu-badge">Piring Terbang</div>
+                    <div class="menu-image">🍛</div>
+                    <div class="menu-content">
+                        <h3>Racikan / Piring Terbang D</h3>
+                        <ul class="menu-list">
+                            <li>Teh Manis</li>
+                            <li>Snack 3 Macam</li>
+                            <li>Sup Manten</li>
+                            <li>Nasi Putih</li>
+                            <li>Sambal Goreng Krecek Bola-bola Krecek</li>
+                            <li>Olahan Daging</li>
+                            <li>Udang Goreng Tepung</li>
+                            <li>Oseng Kombinasi / Capcay</li>
+                            <li>Acar</li>
+                            <li>Buah Potong</li>
+                            <li>Kerupuk</li>
+                        </ul>
+                        <div class="price">Rp 34.000/pax</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WEDDING SECTION ===== -->
+    <section id="wedding" class="wedding-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Paket Wedding Full</h2>
+                <p>Wujudkan hari istimewa Anda dengan layanan pernikahan terlengkap</p>
+            </div>
+
+            <div class="wedding-note">
+                <span class="note-icon">✦</span>
+                Setiap paket mencakup: Wedding Organizer · MUA · Catering · Entertainment · Dokumentasi · Sound System · Dekorasi
+            </div>
+
+            <div class="wedding-grid">
+
+                <!-- 31 JT / 200 PAX -->
+                <div class="wedding-card">
+                    <div class="wedding-card-header">
+                        <div class="wedding-price-info">
+                            <div class="wedding-price">31 <span>jt</span></div>
+                            <div class="wedding-pax">untuk 200 pax</div>
+                        </div>
+                        <div class="wedding-tagline">Celebrate Your New Life</div>
+                    </div>
+                    <div class="wedding-body">
+                        <div class="wedding-col">
+                            <div class="wedding-group">
+                                <h4>Wedding Organizer</h4>
+                                <ul>
+                                    <li>4 Crew WO</li>
+                                    <li>Survey Venue</li>
+                                    <li>5–6 Jam Kerja</li>
+                                    <li>Unlimited Konsultasi</li>
+                                    <li>Technical Meeting</li>
+                                    <li>Koordinasi All Vendor</li>
+                                    <li>12 pcs Buku Panduan</li>
+                                </ul>
+                            </div>
+                            <div class="wedding-group">
+                                <h4>MUA</h4>
+                                <ul>
+                                    <li>Make Up Sepasang Pengantin</li>
+                                    <li>Busana Sepasang Pengantin</li>
+                                    <li>Make Up 2 Pasang Orang Tua</li>
+                                    <li>Busana 2 Pasang Orang Tua</li>
+                                    <li>Retouch Resepsi</li>
+                                    <li>Fresh Melati</li>
+                                    <li>Fake Nail Art Wedding</li>
+                                    <li>Soflens Pengantin Wanita</li>
+                                </ul>
+                            </div>
+                            <div class="wedding-group">
+                                <h4>Master of Ceremony</h4>
+                                <ul>
+                                    <li>Seserahan, Akad & Resepsi</li>
+                                    <li>Bahasa Jawa/Nasional/Campur</li>
+                                    <li>Games & Flashmob</li>
+                                    <li>Lempar Hand Bouquet</li>
+                                    <li>1x Technical Meeting</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="wedding-col">
+                            <div class="wedding-group">
+                                <h4>Catering (1 Set Buffe)</h4>
+                                <ul>
+                                    <li>Nasi</li>
+                                    <li>Sop Rolade Sosis</li>
+                                    <li>Ayam Fillet Saus</li>
+                                    <li>Telur Semur</li>
+                                    <li>Bola-bola Daging</li>
+                                    <li>Olahan Mie</li>
+                                    <li>Acar & Kerupuk</li>
+                                    <li>Air Mineral, Teh & Soft Drink</li>
+                                    <li>3 Stall: Bakso, Siomay/Pempek, Sate</li>
+                                </ul>
+                            </div>
+                            <div class="wedding-group">
+                                <h4>Entertainment</h4>
+                                <ul>
+                                    <li>1 Orgen + Player</li>
+                                    <li>1 Ketipung + Player</li>
+                                    <li>2 Penyanyi</li>
+                                </ul>
+                            </div>
+                            <div class="wedding-group">
+                                <h4>Sound System & Genset</h4>
+                                <ul>
+                                    <li>1 Set Sound System</li>
+                                    <li>1 Set Genset</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="wedding-col">
+                            <div class="wedding-group">
+                                <h4>Dokumentasi</h4>
+                                <ul>
+                                    <li>Unlimited Shoot</li>
+                                    <li>2 Fotografer</li>
+                                    <li>1 Videografer</li>
+                                    <li>Cetak 40 Foto + Album</li>
+                                    <li>Cinematic 3–4 Menit</li>
+                                    <li>Print 1 Foto 12R</li>
+                                    <li>All File in Flashdisk</li>
+                                </ul>
+                            </div>
+                            <div class="wedding-group">
+                                <h4>Dekorasi</h4>
+                                <ul>
+                                    <li>Pelaminan 6,7,8 m</li>
+                                    <li>Welcome Gate</li>
+                                    <li>1 Set Meja Akad</li>
+                                    <li>Welcome Corner</li>
+                                    <li>Tenda Luar 5 Unit</li>
+                                    <li>Stand Foto & Mirror Sign</li>
+                                    <li>Entertaint Dekor & Kotak Ampau</li>
+                                    <li>Karpet + Permadani</li>
+                                    <li>Pregola Daun & Blower</li>
+                                    <li>Meja Buku Tamu & Seserahan</li>
+                                    <li>Kursi</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wedding-free">
+                        <span class="free-label">FREE</span>
+                        Stall Es Cream · Nasi Box Keamanan & Vendor · 6 pcs Bunga Tabur · Hand Bouquet · 2 pcs Buku Tamu · 2 Confetti
+                    </div>
+                </div>
+
+                <!-- 39 JT / 400 PAX -->
+                <div class="wedding-card">
+                    <div class="wedding-card-header">
+                        <div class="wedding-price-info">
+                            <div class="wedding-price">39 <span>jt</span></div>
+                            <div class="wedding-pax">untuk 400 pax</div>
+                        </div>
+                        <div class="wedding-tagline">Celebrate Your New Life</div>
+                    </div>
+                    <div class="wedding-body">
+                        <div class="wedding-col">
+                            <div class="wedding-group">
+                                <h4>Wedding Organizer</h4>
+                                <ul>
+                                    <li>6 Crew WO</li>
+                                    <li>Survey Venue</li>
+                                    <li>5–6 Jam Kerja</li>
+                                    <li>Unlimited Konsultasi</li>
+                                    <li>Technical Meeting</li>
+                                    <li>Koordinasi All Vendor</li>
+                                    <li>15 pcs Buku Panduan</li>
+                                </ul>
+                            </div>
+                            <div class="wedding-group">
+                                <h4>MUA</h4>
+                                <ul>
+                                    <li>Make Up Sepasang Pengantin</li>
+                                    <li>Busana Sepasang Pengantin</li>
+                                    <li>Make Up 2 Pasang Orang Tua</li>
+                                    <li>Busana 2 Pasang Orang Tua</li>
+                                    <li>Retouch Resepsi</li>
+                                    <li>Fresh Melati</li>
+                                    <li>Fake Nail Art Wedding</li>
+                                    <li>Soflens Pengantin Wanita</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="wedding-col">
+                            <div class="wedding-group">
+                                <h4>Catering (1 Set Buffe)</h4>
+                                <ul>
+                                    <li>Nasi</li>
+                                    <li>Sop Rolade Sosis</li>
+                                    <li>Ayam Fillet Saus</li>
+                                    <li>Telur Semur</li>
+                                    <li>Bola-bola Daging</li>
+                                    <li>Olahan Mie</li>
+                                    <li>Acar & Kerupuk</li>
+                                    <li>Air Mineral, Teh & Soft Drink</li>
+                                    <li>3 Stall: Bakso, Siomay/Pempek, Sate</li>
+                                </ul>
+                            </div>
+                            <div class="wedding-group">
+                                <h4>Entertainment</h4>
+                                <ul>
+                                    <li>1 Orgen + Player</li>
+                                    <li>1 Ketipung + Player</li>
+                                    <li>2 Penyanyi</li>
+                                </ul>
+                            </div>
+                            <div class="wedding-group">
+                                <h4>Sound System & Genset</h4>
+                                <ul>
+                                    <li>1 Set Sound System</li>
+                                    <li>1 Set Genset</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="wedding-col">
+                            <div class="wedding-group">
+                                <h4>Dokumentasi</h4>
+                                <ul>
+                                    <li>Unlimited Shoot</li>
+                                    <li>2 Fotografer</li>
+                                    <li>1 Videografer</li>
+                                    <li>Cetak 40 Foto + Album</li>
+                                    <li>Cinematic 3–4 Menit</li>
+                                    <li>Print 1 Foto 12R</li>
+                                    <li>All File in Flashdisk</li>
+                                </ul>
+                            </div>
+                            <div class="wedding-group">
+                                <h4>Dekorasi</h4>
+                                <ul>
+                                    <li>Pelaminan 6,7,8 m</li>
+                                    <li>Welcome Gate</li>
+                                    <li>1 Set Meja Akad</li>
+                                    <li>Welcome Corner</li>
+                                    <li>Tenda Luar 5 Unit</li>
+                                    <li>Stand Foto & Mirror Sign</li>
+                                    <li>Entertaint Dekor & Kotak Ampau</li>
+                                    <li>Karpet + Permadani</li>
+                                    <li>Pregola Daun & Blower</li>
+                                    <li>Meja Buku Tamu & Seserahan</li>
+                                    <li>Kursi</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wedding-free">
+                        <span class="free-label">FREE</span>
+                        Stall Es Cream · Nasi Box Keamanan & Vendor · 8 pcs Bunga Tabur · Hand Bouquet · 2 pcs Buku Tamu · 2 Confetti
+                    </div>
+                </div>
+
+                <!-- 49 JT / 550 PAX -->
+                <div class="wedding-card">
+                    <div class="wedding-card-header">
+                        <div class="wedding-price-info">
+                            <div class="wedding-price">49 <span>jt</span></div>
+                            <div class="wedding-pax">untuk 550 pax</div>
+                        </div>
+                        <div class="wedding-tagline">Celebrate Your New Life</div>
+                    </div>
+                    <div class="wedding-body">
+                        <div class="wedding-col">
+                            <div class="wedding-group">
+                                <h4>Wedding Organizer</h4>
+                                <ul>
+                                    <li>6 Crew WO</li>
+                                    <li>Survey Venue</li>
+                                    <li>5–6 Jam Kerja</li>
+                                    <li>Unlimited Konsultasi</li>
+                                    <li>Technical Meeting</li>
+                                    <li>Koordinasi All Vendor</li>
+                                    <li>15 pcs Buku Panduan</li>
+                                </ul>
+                            </div>
+                            <div class="wedding-group">
+                                <h4>MUA</h4>
+                                <ul>
+                                    <li>Make Up Sepasang Pengantin</li>
+                                    <li>Busana Sepasang Pengantin</li>
+                                    <li>Make Up 2 Pasang Orang Tua</li>
+                                    <li>Busana 2 Pasang Orang Tua</li>
+                                    <li>Retouch Resepsi</li>
+                                    <li>Fresh Melati</li>
+                                    <li>Fake Nail Art Wedding</li>
+                                    <li>Soflens Pengantin Wanita</li>
+                                    <li>Makeup + Busana 4 Penjaga Buku Tamu</li>
+                                    <li>Makeup + Busana 4 Pasang Among Tamu</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="wedding-col">
+                            <div class="wedding-group">
+                                <h4>Catering (1 Set Buffe)</h4>
+                                <ul>
+                                    <li>Nasi</li>
+                                    <li>Sop Rolade Sosis</li>
+                                    <li>Ayam Fillet Saus</li>
+                                    <li>Telur Semur</li>
+                                    <li>Bola-bola Daging</li>
+                                    <li>Olahan Mie</li>
+                                    <li>Acar & Kerupuk</li>
+                                    <li>Air Mineral, Teh & Soft Drink</li>
+                                    <li>3 Stall: Bakso, Siomay/Pempek, Sate</li>
+                                </ul>
+                            </div>
+                            <div class="wedding-group">
+                                <h4>Entertainment</h4>
+                                <ul>
+                                    <li>1 Vocal</li>
+                                    <li>1 Keyboard + Player</li>
+                                    <li>1 Saxophone + Player</li>
+                                </ul>
+                            </div>
+                            <div class="wedding-group">
+                                <h4>Sound System & Genset</h4>
+                                <ul>
+                                    <li>1 Set Sound System</li>
+                                    <li>1 Set Genset</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="wedding-col">
+                            <div class="wedding-group">
+                                <h4>Dokumentasi</h4>
+                                <ul>
+                                    <li>Unlimited Shoot</li>
+                                    <li>2 Fotografer</li>
+                                    <li>1 Videografer</li>
+                                    <li>Cetak 40 Foto + Album</li>
+                                    <li>Cinematic 3–4 Menit</li>
+                                    <li>Print 1 Foto 12R</li>
+                                    <li>All File in Flashdisk</li>
+                                </ul>
+                            </div>
+                            <div class="wedding-group">
+                                <h4>Dekorasi</h4>
+                                <ul>
+                                    <li>Pelaminan 6,7,8 m</li>
+                                    <li>Welcome Gate</li>
+                                    <li>1 Set Meja Akad</li>
+                                    <li>Welcome Corner</li>
+                                    <li>Tenda Luar 5 Unit</li>
+                                    <li>Stand Foto & Mirror Sign</li>
+                                    <li>Entertaint Dekor & Kotak Ampau</li>
+                                    <li>Karpet + Permadani</li>
+                                    <li>Pregola Daun & Blower</li>
+                                    <li>Meja Buku Tamu & Seserahan</li>
+                                    <li>Kursi</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wedding-free">
+                        <span class="free-label">FREE</span>
+                        Stall Es Cream · Nasi Box Keamanan & Vendor · 6 pcs Bunga Tabur · Hand Bouquet · 2 pcs Buku Tamu · 2 Confetti
+                    </div>
+                </div>
+
+                <!-- 48,2 JT / 550 PAX (versi B) -->
+                <div class="wedding-card">
+                    <div class="wedding-card-header">
+                        <div class="wedding-price-info">
+                            <div class="wedding-price">48,2 <span>jt</span></div>
+                            <div class="wedding-pax">untuk 550 pax</div>
+                        </div>
+                        <div class="wedding-tagline">Celebrate Your New Life</div>
+                    </div>
+                    <div class="wedding-body">
+                        <div class="wedding-col">
+                            <div class="wedding-group">
+                                <h4>Wedding Organizer</h4>
+                                <ul>
+                                    <li>6 Crew WO</li>
+                                    <li>Survey Venue</li>
+                                    <li>5–6 Jam Kerja</li>
+                                    <li>Unlimited Konsultasi</li>
+                                    <li>Technical Meeting</li>
+                                    <li>Koordinasi All Vendor</li>
+                                    <li>15 pcs Buku Panduan</li>
+                                </ul>
+                            </div>
+                            <div class="wedding-group">
+                                <h4>MUA</h4>
+                                <ul>
+                                    <li>Make Up Sepasang Pengantin</li>
+                                    <li>Busana Sepasang Pengantin</li>
+                                    <li>Make Up 2 Pasang Orang Tua</li>
+                                    <li>Busana 2 Pasang Orang Tua</li>
+                                    <li>Retouch Resepsi</li>
+                                    <li>Fresh Melati</li>
+                                    <li>Fake Nail Art Wedding</li>
+                                    <li>Soflens Pengantin Wanita</li>
+                                    <li>Makeup + Busana 4 Penjaga Buku Tamu</li>
+                                    <li>Makeup + Busana 4 Pasang Among Tamu</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="wedding-col">
+                            <div class="wedding-group">
+                                <h4>Catering (1 Set Buffe)</h4>
+                                <ul>
+                                    <li>Nasi</li>
+                                    <li>Sop Rolade Sosis</li>
+                                    <li>Ayam Fillet Saus</li>
+                                    <li>Telur Semur</li>
+                                    <li>Bola-bola Daging</li>
+                                    <li>Olahan Mie</li>
+                                    <li>Acar & Kerupuk</li>
+                                    <li>Air Mineral, Teh & Soft Drink</li>
+                                    <li>3 Stall: Bakso, Siomay/Pempek, Sate</li>
+                                </ul>
+                            </div>
+                            <div class="wedding-group">
+                                <h4>Entertainment</h4>
+                                <ul>
+                                    <li>1 Orgen + Player</li>
+                                    <li>1 Ketipung + Player</li>
+                                    <li>2 Penyanyi</li>
+                                </ul>
+                            </div>
+                            <div class="wedding-group">
+                                <h4>Sound System & Genset</h4>
+                                <ul>
+                                    <li>1 Set Sound System</li>
+                                    <li>1 Set Genset</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="wedding-col">
+                            <div class="wedding-group">
+                                <h4>Dokumentasi</h4>
+                                <ul>
+                                    <li>Unlimited Shoot</li>
+                                    <li>2 Fotografer</li>
+                                    <li>1 Videografer</li>
+                                    <li>Cetak 40 Foto + Album</li>
+                                    <li>Cinematic 3–4 Menit</li>
+                                    <li>Print 1 Foto 12R</li>
+                                    <li>All File in Flashdisk</li>
+                                </ul>
+                            </div>
+                            <div class="wedding-group">
+                                <h4>Dekorasi</h4>
+                                <ul>
+                                    <li>Pelaminan 6,7,8 m</li>
+                                    <li>Welcome Gate</li>
+                                    <li>1 Set Meja Akad</li>
+                                    <li>Welcome Corner</li>
+                                    <li>Tenda Luar 5 Unit</li>
+                                    <li>Stand Foto & Mirror Sign</li>
+                                    <li>Entertaint Dekor & Kotak Ampau</li>
+                                    <li>Karpet + Permadani</li>
+                                    <li>Pregola Daun & Blower</li>
+                                    <li>Meja Buku Tamu & Seserahan</li>
+                                    <li>Kursi</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wedding-free">
+                        <span class="free-label">FREE</span>
+                        Stall Es Cream · Nasi Box Keamanan & Vendor · 6 pcs Bunga Tabur · Hand Bouquet · 2 pcs Buku Tamu · 2 Confetti
+                    </div>
+                </div>
+
+                <!-- 52 JT / 700 PAX -->
+                <div class="wedding-card">
+                    <div class="wedding-card-header">
+                        <div class="wedding-price-info">
+                            <div class="wedding-price">52 <span>jt</span></div>
+                            <div class="wedding-pax">untuk 700 pax</div>
+                        </div>
+                        <div class="wedding-tagline">Celebrate Your New Life</div>
+                    </div>
+                    <div class="wedding-body">
+                        <div class="wedding-col">
+                            <div class="wedding-group">
+                                <h4>Wedding Organizer</h4>
+                                <ul>
+                                    <li>7 Crew WO</li>
+                                    <li>Survey Venue</li>
+                                    <li>5–6 Jam Kerja</li>
+                                    <li>Unlimited Konsultasi</li>
+                                    <li>Technical Meeting</li>
+                                    <li>Koordinasi All Vendor</li>
+                                    <li>15 pcs Buku Panduan</li>
+                                </ul>
+                            </div>
+                            <div class="wedding-group">
+                                <h4>MUA</h4>
+                                <ul>
+                                    <li>Make Up Sepasang Pengantin</li>
+                                    <li>Busana Sepasang Pengantin</li>
+                                    <li>Make Up 2 Pasang Orang Tua</li>
+                                    <li>Busana 2 Pasang Orang Tua</li>
+                                    <li>Retouch Resepsi</li>
+                                    <li>Fresh Melati</li>
+                                    <li>Fake Nail Art Wedding</li>
+                                    <li>Soflens Pengantin Wanita</li>
+                                </ul>
+                            </div>
+                            <div class="wedding-group">
+                                <h4>Master of Ceremony</h4>
+                                <ul>
+                                    <li>Seserahan, Akad & Resepsi</li>
+                                    <li>Bahasa Jawa/Nasional/Campur</li>
+                                    <li>Games & Flashmob</li>
+                                    <li>Lempar Hand Bouquet</li>
+                                    <li>1x Technical Meeting</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="wedding-col">
+                            <div class="wedding-group">
+                                <h4>Catering (1 Set Buffe)</h4>
+                                <ul>
+                                    <li>Nasi</li>
+                                    <li>Sop Rolade Sosis</li>
+                                    <li>Ayam Fillet Saus</li>
+                                    <li>Telur Semur</li>
+                                    <li>Bola-bola Daging</li>
+                                    <li>Olahan Mie</li>
+                                    <li>Acar & Kerupuk</li>
+                                    <li>Air Mineral, Teh & Soft Drink</li>
+                                    <li>3 Stall: Bakso, Siomay/Pempek, Sate</li>
+                                </ul>
+                            </div>
+                            <div class="wedding-group">
+                                <h4>Entertainment</h4>
+                                <ul>
+                                    <li>1 Orgen + Player</li>
+                                    <li>1 Ketipung + Player</li>
+                                    <li>2 Penyanyi</li>
+                                </ul>
+                            </div>
+                            <div class="wedding-group">
+                                <h4>Sound System & Genset</h4>
+                                <ul>
+                                    <li>1 Set Sound System</li>
+                                    <li>1 Set Genset</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="wedding-col">
+                            <div class="wedding-group">
+                                <h4>Dokumentasi</h4>
+                                <ul>
+                                    <li>Unlimited Shoot</li>
+                                    <li>2 Fotografer</li>
+                                    <li>1 Videografer</li>
+                                    <li>Cetak 40 Foto + Album</li>
+                                    <li>Cinematic 3–4 Menit</li>
+                                    <li>Print 1 Foto 12R</li>
+                                    <li>All File in Flashdisk</li>
+                                </ul>
+                            </div>
+                            <div class="wedding-group">
+                                <h4>Dekorasi</h4>
+                                <ul>
+                                    <li>Pelaminan 6,7,8 m</li>
+                                    <li>Welcome Gate</li>
+                                    <li>1 Set Meja Akad</li>
+                                    <li>Welcome Corner</li>
+                                    <li>Tenda Luar 5 Unit</li>
+                                    <li>Stand Foto & Mirror Sign</li>
+                                    <li>Entertaint Dekor & Kotak Ampau</li>
+                                    <li>Karpet + Permadani</li>
+                                    <li>Pregola Daun & Blower</li>
+                                    <li>Meja Buku Tamu & Seserahan</li>
+                                    <li>Kursi</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wedding-free">
+                        <span class="free-label">FREE</span>
+                        Stall Es Cream · Nasi Box Keamanan & Vendor · 8 pcs Bunga Tabur · Hand Bouquet · 2 pcs Buku Tamu · 2 Confetti
+                    </div>
+                </div>
+
+                <!-- 61 JT / 1000 PAX -->
+                <div class="wedding-card">
+                    <div class="wedding-card-header">
+                        <div class="wedding-price-info">
+                            <div class="wedding-price">61 <span>jt</span></div>
+                            <div class="wedding-pax">untuk 1.000 pax</div>
+                        </div>
+                        <div class="wedding-tagline">Celebrate Your New Life</div>
+                    </div>
+                    <div class="wedding-body">
+                        <div class="wedding-col">
+                            <div class="wedding-group">
+                                <h4>Wedding Organizer</h4>
+                                <ul>
+                                    <li>9 Crew WO</li>
+                                    <li>Survey Venue</li>
+                                    <li>5–6 Jam Kerja</li>
+                                    <li>Unlimited Konsultasi</li>
+                                    <li>Technical Meeting</li>
+                                    <li>Koordinasi All Vendor</li>
+                                    <li>17 pcs Buku Panduan</li>
+                                </ul>
+                            </div>
+                            <div class="wedding-group">
+                                <h4>MUA</h4>
+                                <ul>
+                                    <li>Make Up Sepasang Pengantin</li>
+                                    <li>Busana Sepasang Pengantin</li>
+                                    <li>Make Up 2 Pasang Orang Tua</li>
+                                    <li>Busana 2 Pasang Orang Tua</li>
+                                    <li>Retouch Resepsi</li>
+                                    <li>Fresh Melati</li>
+                                    <li>Fake Nail Art Wedding</li>
+                                    <li>Soflens Pengantin Wanita</li>
+                                </ul>
+                            </div>
+                            <div class="wedding-group">
+                                <h4>Master of Ceremony</h4>
+                                <ul>
+                                    <li>Seserahan, Akad & Resepsi</li>
+                                    <li>Bahasa Jawa/Nasional/Campur</li>
+                                    <li>Games & Flashmob</li>
+                                    <li>Lempar Hand Bouquet</li>
+                                    <li>1x Technical Meeting</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="wedding-col">
+                            <div class="wedding-group">
+                                <h4>Catering (1 Set Buffe)</h4>
+                                <ul>
+                                    <li>Nasi</li>
+                                    <li>Sop Rolade Sosis</li>
+                                    <li>Ayam Fillet Saus</li>
+                                    <li>Telur Semur</li>
+                                    <li>Bola-bola Daging</li>
+                                    <li>Olahan Mie</li>
+                                    <li>Acar & Kerupuk</li>
+                                    <li>Air Mineral, Teh & Soft Drink</li>
+                                    <li>3 Stall: Bakso, Siomay/Pempek, Sate</li>
+                                </ul>
+                            </div>
+                            <div class="wedding-group">
+                                <h4>Entertainment</h4>
+                                <ul>
+                                    <li>1 Orgen + Player</li>
+                                    <li>1 Ketipung + Player</li>
+                                    <li>2 Penyanyi</li>
+                                </ul>
+                            </div>
+                            <div class="wedding-group">
+                                <h4>Sound System & Genset</h4>
+                                <ul>
+                                    <li>1 Set Sound System</li>
+                                    <li>1 Set Genset</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="wedding-col">
+                            <div class="wedding-group">
+                                <h4>Dokumentasi</h4>
+                                <ul>
+                                    <li>Unlimited Shoot</li>
+                                    <li>2 Fotografer</li>
+                                    <li>1 Videografer</li>
+                                    <li>Cetak 40 Foto + Album</li>
+                                    <li>Cinematic 3–4 Menit</li>
+                                    <li>Print 1 Foto 12R</li>
+                                    <li>All File in Flashdisk</li>
+                                </ul>
+                            </div>
+                            <div class="wedding-group">
+                                <h4>Dekorasi</h4>
+                                <ul>
+                                    <li>Pelaminan 6,7,8 m</li>
+                                    <li>Welcome Gate</li>
+                                    <li>1 Set Meja Akad</li>
+                                    <li>Welcome Corner</li>
+                                    <li>Tenda Luar 5 Unit</li>
+                                    <li>Stand Foto & Mirror Sign</li>
+                                    <li>Entertaint Dekor & Kotak Ampau</li>
+                                    <li>Karpet + Permadani</li>
+                                    <li>Pregola Daun & Blower</li>
+                                    <li>Meja Buku Tamu & Seserahan</li>
+                                    <li>Kursi</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wedding-free">
+                        <span class="free-label">FREE</span>
+                        Stall Es Cream · Nasi Box Keamanan & Vendor · 8 pcs Bunga Tabur / 15 Balon Terbang · Hand Bouquet · 2 pcs Buku Tamu · 2 Confetti
+                    </div>
+                </div>
+
+            </div><!-- end wedding-grid -->
+
+            <div class="wedding-cta">
+                <p>Harga bersifat informatif dan dapat berubah sewaktu-waktu. Hubungi kami untuk konsultasi gratis.</p>
+                <a href="#contact" class="btn-primary">Konsultasi Sekarang →</a>
             </div>
         </div>
     </section>
@@ -425,87 +1461,85 @@
             </div>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">💒</div>
-                    <h3>Pernikahan</h3>
-                    <p>Layanan catering eksklusif untuk hari istimewa Anda, dengan menu spesial, dekorasi elegan, dan pelayanan all-in.</p>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">🎉</div>
-                    <h3>Prasmanan</h3>
-                    <p>Pilihan menu beragam untuk ulang tahun, syukuran, arisan, maupun acara keluarga lainnya yang hangat dan meriah.</p>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">🏢</div>
-                    <h3>Formal Event</h3>
-                    <p>Catering profesional untuk meeting, seminar, gathering, dan acara perusahaan atau instansi resmi.</p>
-                </div>
-                
-                <div class="service-card">
                     <div class="service-icon">🍱</div>
-                    <h3>Nasi Box</h3>
-                    <p>Praktis, higienis, dan lezat. Cocok untuk acara outdoor, perjalanan, atau jamuan sederhana dengan kemasan eksklusif.</p>
+                    <h3>Paket Nasi Box</h3>
+                    <p>Paket praktis dengan lauk lengkap, higienis, dan siap saji. Cocok untuk acara kantor, perjalanan, maupun kegiatan outdoor.</p>
                 </div>
-
                 <div class="service-card">
                     <div class="service-icon">🙏</div>
-                    <h3>Kenduri</h3>
-                    <p>Paket kenduri lengkap dengan cita rasa tradisional, sesuai untuk acara tahlilan, doa bersama, atau syukuran keluarga.</p>
+                    <h3>Paket Kenduri</h3>
+                    <p>Hidangan tradisional lengkap untuk acara tahlilan, doa bersama, dan syukuran dengan cita rasa khas rumahan.</p>
                 </div>
-
                 <div class="service-card">
                     <div class="service-icon">🥡</div>
-                    <h3>Ater-ater</h3>
-                    <p>Layanan hantaran atau bingkisan makanan dengan kemasan rapi, cocok untuk berbagi ke tetangga, rekan, atau kerabat.</p>
+                    <h3>Paket Hantaran</h3>
+                    <p>Menu spesial dalam kemasan rapi dan elegan, cocok untuk dibagikan ke kerabat, tetangga, maupun relasi.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🍪</div>
+                    <h3>Snack Box</h3>
+                    <p>Pilihan snack manis dan gurih dalam satu paket praktis, cocok untuk rapat, seminar, dan acara santai.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎂</div>
+                    <h3>Tumpeng</h3>
+                    <p>Sajian tumpeng lengkap dengan lauk tradisional, cocok untuk perayaan ulang tahun, syukuran, dan acara spesial.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🍽️</div>
+                    <h3>Paket Prasmanan</h3>
+                    <p>Konsep buffet dengan berbagai pilihan menu utama dan pendamping, cocok untuk acara besar dan menjamu banyak tamu.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔥</div>
+                    <h3>Menu Stall</h3>
+                    <p>Live cooking dan booth makanan seperti bakso, sate, atau mie, memberikan pengalaman makan yang lebih interaktif.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🍛</div>
+                    <h3>Paket Piring Terbang</h3>
+                    <p>Penyajian makanan cepat dan efisien dengan sistem distribusi langsung ke tamu, cocok untuk acara dengan mobilitas tinggi.</p>
                 </div>
             </div>
         </div>
     </section>
 
-     <!-- Testimonials Section -->
+    <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials">
         <div class="container">
             <div class="section-title">
                 <h2>Testimoni Pelanggan</h2>
                 <p>Apa kata mereka yang telah menggunakan layanan kami</p>
             </div>
-            
             <div class="testimonial-slider-container">
                 <button class="slider-btn prev-btn" onclick="prevSlide()">‹</button>
-                
                 <div class="testimonial-slider">
                     <div class="testimonial-track">
                         <div class="testimonial-card">
                             <div class="stars">⭐⭐⭐⭐⭐</div>
-                            <p class="testimonial-text">"Selama 7 hari ikut kegiatan di BLK Sleman, katering dari Azzalea ini selalu memuaskan. Setiap hari makanannya selalu datang dalam kondisi fresh, porsinya pas, dan rasanya oke. Variasi menu juga cukup menarik, jadi nggak bikin bosan. Pokoknya highly recommended buat siapa pun yang lagi cari katering berkualitas di area Sleman!."</p>
+                            <p class="testimonial-text">"Selama 7 hari ikut kegiatan di BLK Sleman, katering dari Azzalea ini selalu memuaskan. Setiap hari makanannya selalu datang dalam kondisi fresh, porsinya pas, dan rasanya oke. Variasi menu juga cukup menarik, jadi nggak bikin bosan. Pokoknya highly recommended buat siapa pun yang lagi cari katering berkualitas di area Sleman!"</p>
                             <p class="testimonial-author">- acidguru</p>
                         </div>
-                        
                         <div class="testimonial-card">
                             <div class="stars">⭐⭐⭐⭐⭐</div>
                             <p class="testimonial-text">"Tempat pesan catering.. Pelayanan oke.. Bagi instansi juga bisa karena sudah terdaftar di mbizmarket."</p>
                             <p class="testimonial-author">- Arif Masthori</p>
                         </div>
-                        
                         <div class="testimonial-card">
                             <div class="stars">⭐⭐⭐⭐⭐</div>
                             <p class="testimonial-text">"Makanan sangat Enak, dan dijamin kebersihannya"</p>
                             <p class="testimonial-author">- Fitri Meilani</p>
                         </div>
-                        
                         <div class="testimonial-card">
                             <div class="stars">⭐⭐⭐⭐⭐</div>
                             <p class="testimonial-text">"Catering cocok untuk langganan, pelayanan gercep"</p>
                             <p class="testimonial-author">- Raden Baguse</p>
                         </div>
-                        
                         <div class="testimonial-card">
                             <div class="stars">⭐⭐⭐⭐⭐</div>
                             <p class="testimonial-text">"Pesan apa saja bisa."</p>
                             <p class="testimonial-author">- Ariv Darmawan</p>
                         </div>
-                        
                         <div class="testimonial-card">
                             <div class="stars">⭐⭐⭐⭐⭐</div>
                             <p class="testimonial-text">"Catering cocok banget, orangnya baik baik."</p>
@@ -513,10 +1547,8 @@
                         </div>
                     </div>
                 </div>
-                
                 <button class="slider-btn next-btn" onclick="nextSlide()">›</button>
             </div>
-            
             <div class="slider-dots"></div>
         </div>
     </section>
@@ -537,15 +1569,13 @@
                             <p>Jl. Raya Soka Wetan, RT.04/RW.16, Bening, Merdikorejo, Kec. Tempel, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55552</p>
                         </div>
                     </div>
-                    
                     <div class="contact-item">
                         <div class="contact-icon">📱</div>
                         <div>
                             <h3>Telepon / WhatsApp</h3>
-                            <p>0859-3047-0342</p>
+                            <p>0878 3985 7227</p>
                         </div>
                     </div>
-                    
                     <div class="contact-item">
                         <div class="contact-icon">📸</div>
                         <div>
@@ -553,7 +1583,6 @@
                             <p>catering_azzalea</p>
                         </div>
                     </div>
-                    
                     <div class="contact-item">
                         <div class="contact-icon">🕐</div>
                         <div>
@@ -562,7 +1591,6 @@
                         </div>
                     </div>
                 </div>
-                
                 <div class="contact-form">
                     <h3>Kirim Pesan</h3>
                     <form id="contactForm">
@@ -593,8 +1621,6 @@
         </div>
     </footer>
 
-    <!-- JavaScript -->
     <script src="js/main.js"></script>
-    
 </body>
 </html>

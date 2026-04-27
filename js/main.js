@@ -1,7 +1,55 @@
-/* ==========================================
-   AZZALEA CATERING - MAIN JAVASCRIPT
-   Modern Version
-   ========================================== */
+document.addEventListener('DOMContentLoaded', function() {
+    const filterTabs = document.querySelectorAll('.filter-tab');
+    const menuCards = document.querySelectorAll('.menu-card');
+    
+    filterTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+            const category = this.getAttribute('data-category');
+            
+            // Remove active class from all tabs
+            filterTabs.forEach(t => t.classList.remove('active'));
+            
+            // Add active class to clicked tab
+            this.classList.add('active');
+            
+            // Filter menu cards with smooth animation
+            menuCards.forEach(card => {
+                const cardCategory = card.getAttribute('data-category');
+                
+                if (category === 'all' || cardCategory === category) {
+                    // Show card with animation
+                    card.style.display = 'block';
+                    setTimeout(() => {
+                        card.style.opacity = '1';
+                        card.style.transform = 'scale(1)';
+                    }, 10);
+                } else {
+                    // Hide card with animation
+                    card.style.opacity = '0';
+                    card.style.transform = 'scale(0.9)';
+                    setTimeout(() => {
+                        card.style.display = 'none';
+                    }, 300);
+                }
+            });
+            
+            // Scroll to menu section smoothly
+            const menuSection = document.getElementById('menu');
+            const yOffset = -100;
+            const y = menuSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+            
+            window.scrollTo({
+                top: y,
+                behavior: 'smooth'
+            });
+        });
+    });
+    
+    // Initialize - show all cards
+    menuCards.forEach(card => {
+        card.style.transition = 'all 0.3s ease';
+    });
+});
 
 // Mobile Menu Toggle
 function toggleMenu() {
